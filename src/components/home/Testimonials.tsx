@@ -21,10 +21,9 @@ export default function Testimonials() {
     >
       <Section bg="transparent" cozy>
         <SectionHeadline
-          overline="Join the community"
           title={
             <Typography variant="h2" component="h2">
-              Supported by thousands of <GradientText>developers and designers</GradientText>
+              EpicChain is poised to revolutionize <GradientText>the blockchain landscape</GradientText>
             </Typography>
           }
         />

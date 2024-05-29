@@ -16,15 +16,14 @@ export default function StartToday() {
     >
       <SectionHeadline
         alwaysCenter
-        overline="Start now"
         title={
           <Typography variant="h2">
-            Ship your next project <GradientText>faster</GradientText>
+            The Next-Generation Blockchain <GradientText>Ecosystem</GradientText>
           </Typography>
         }
-        description="Find out why MUI's tools are trusted by thousands of open-source developers and teams around the world."
+        description="EpicChain is a pioneering blockchain platform designed to redefine the landscape of digital assets and decentralized applications."
       />
-      <GetStartedButtons primaryLabel="Discover the Core libraries" primaryUrl="/core/" />
+      <GetStartedButtons primaryLabel="Explore EpicChain" primaryUrl="/core/" />
     </Box>
   );
 }

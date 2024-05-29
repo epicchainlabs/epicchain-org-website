@@ -13,23 +13,23 @@ import GetStartedButtons from 'docs/src/components/home/GetStartedButtons';
 const content = [
   {
     icon: <IconImage name="pricing/x-plan-community" mode="" loading="eager" />,
-    title: 'Community version',
+    title: 'Enterprise-Grade Security Solutions',
     description:
-      'Free forever. This version contains features that we believe are maintainable by contributions from the open-source community.',
+      'Quantum Guard Nexus offers enterprise-grade security solutions tailored to the specific needs of businesses. These solutions provide robust protection against cyber threats and ensure the integrity of blockchain operations.',
     link: '/x/introduction/licensing/#community-plan',
   },
   {
     icon: <IconImage name="pricing/x-plan-pro" mode="" loading="eager" />,
-    title: 'Pro plan',
+    title: 'Customizable Security Packages',
     description:
-      'More advanced capabilities such as multi-filtering, multi-sorting, and more for the Data Grid; as well as the other components.',
+      'Businesses can choose from a range of customizable security packages offered by Quantum Guard Nexus. These packages are designed to meet the unique requirements of different industries and can be tailored to fit specific business needs.',
     link: '/x/introduction/licensing/#pro-plan',
   },
   {
     icon: <IconImage name="pricing/x-plan-premium" mode="" loading="eager" />,
-    title: 'Premium plan',
+    title: 'Real-Time Security Monitoring Services',
     description:
-      'The most advanced features for every component, including row grouping and Excel export for the Data Grid, plus everything included in the Pro plan.',
+      'Quantum Guard Nexus includes real-time security monitoring services that offer continuous protection against emerging threats.',
     link: '/x/introduction/licensing/#premium-plan',
   },
 ];
@@ -40,19 +40,12 @@ export default function XPlans2() {
       <Grid container spacing={2} alignItems="center">
         <Grid md={6}>
           <SectionHeadline
-            overline="Plans"
             title={
               <Typography variant="h2">
-                Available with <GradientText>MIT and commercial</GradientText> licenses
+                Commercial <GradientText>Availability</GradientText>
               </Typography>
             }
-            description="MUI X components are available under two licenses: MIT for the free community version, and commercial for Pro and Premium plans."
-          />
-          <GetStartedButtons
-            primaryLabel="Compare plans"
-            primaryUrl={ROUTES.pricing}
-            secondaryLabel="Learn about licensing"
-            secondaryUrl={ROUTES.xLicensing}
+            description="EpicChain's cutting-edge security framework, is now available for commercial use, offering advanced security solutions to businesses of all sizes."
           />
         </Grid>
         <Grid xs={12} md={6}>

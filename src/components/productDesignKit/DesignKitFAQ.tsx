@@ -14,65 +14,42 @@ import Section from 'docs/src/layouts/Section';
 
 const faqData = [
   {
-    summary: 'What long-term support do you offer?',
+    summary: 'What is EpicChain?',
     detail: (
       <React.Fragment>
-        We think you&apos;ll love the components we&apos;ve built so far, but we&apos;re planning to
-        release more. We opened it up as soon as we had something useful, so that you can start
-        getting value from it right away, and we&apos;ll be adding new features and components based
-        on our own ideas, and on suggestions from early access customers.
+        EpicChain is a next-generation blockchain ecosystem designed to revolutionize the way digital assets are managed and traded. It offers features like Quantum Guard Nexus, Quantum Vault Asset, and smart contracts supporting various programming languages.
       </React.Fragment>
     ),
   },
   {
-    summary: 'How many licenses do I need?',
+    summary: 'What are EpicChain native tokens?',
     detail: (
       <React.Fragment>
-        The number of licenses purchased must correspond to the maximum number of editors working
-        concurrently in a 24 hour period. An editor is somebody contributing changes to the designed
-        screens that use the Design Kits. No licenses are required for viewing the designs.
+        EpicChain has two native tokens: EpicChain (XPR) and EpicPulse (XPP). XPR is the utility token for the ecosystem, while XPP is primarily for transaction maintenance.
       </React.Fragment>
     ),
   },
   {
-    summary: 'The Design Kit got an update. How do I get it?',
+    summary: 'How can I participate in EpicChain ecosystem?',
     detail: (
       <React.Fragment>
-        We&apos;ll send you an email when a new release is available. You can access the item on the{' '}
-        <InternalLink href="https://mui.com/store/account/downloads/">download</InternalLink> page
-        of your store account and find a detailed description of the changes under
-        the&quot;Changelog&quot; tab on this page.
+        You can participate in the EpicChain ecosystem by holding EpicChain tokens (XPR) and contributing to the network's security through validation or voting for validators.
       </React.Fragment>
     ),
   },
   {
-    summary: 'Is the Material UI Sync plugin paid?',
+    summary: 'How does Quantum Guard Nexus enhance security?',
     detail: (
       <React.Fragment>
-        No. We&apos;re still in alpha mode and rolling out more features progressively, as per your
-        feedback. We might introduce paid tiers in the future, though.
+        Quantum Guard Nexus uses advanced cryptographic techniques, multi-layered security protocols, and real-time threat detection to protect digital assets and transactions from threats, including quantum computing attacks.
       </React.Fragment>
     ),
   },
   {
-    summary: 'Do you offer discounts to educational or non-profit organizations?',
+    summary: 'How can I get involved with EpicChain Labs?',
     detail: (
       <React.Fragment>
-        <strong>Yes.</strong> We offer a 50% discount on all products licensed to students,
-        instructors, non-profit, and charity entities. This special discount cannot be combined with
-        any other type of discount. To qualify for the discount, you need to send us a document
-        clearly indicating that you are a member of the respective institution. An email from your
-        official account which bears your signature is sufficient in most cases. For more
-        information on how to qualify for a discount, please contact sales.
-      </React.Fragment>
-    ),
-  },
-  {
-    summary: 'Figma or Sketch or Adobe XD?',
-    detail: (
-      <React.Fragment>
-        We aim to keep feature parity between the Figma, Sketch, and Adobe XD kits where possible.
-        We have a 50% off coupon for past customers who want to switch between them.
+        You can join the EpicChain Labs community by visiting our website and participating in discussions, contributing to the development of the ecosystem, and exploring opportunities to collaborate with other members.
       </React.Fragment>
     ),
   },
@@ -184,7 +161,7 @@ export default function DesignKitFAQ() {
               // @ts-expect-error
               variant="link"
               size="small"
-              href="mailto:sales@mui.com"
+              href="mailto:support@epicchain.org"
               endIcon={<KeyboardArrowRightRounded />}
               sx={{ ml: -1 }}
             >

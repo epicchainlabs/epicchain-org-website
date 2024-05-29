@@ -12,21 +12,21 @@ import SectionHeadline from 'docs/src/components/typography/SectionHeadline';
 const content = [
   {
     icon: <Palette fontSize="small" color="primary" />,
-    title: 'For designers',
+    title: 'Agile Methodology',
     description:
-      'Save time getting the Material UI components all setup, leveraging the latest features from your favorite design tool.',
+      'Adopting agile development practices allows EpicChain to quickly adapt to changing requirements and deliver value to users in shorter development cycles. This approach promotes collaboration, flexibility, and the ability to respond to feedback effectively.',
   },
   {
     icon: <LibraryBooks fontSize="small" color="primary" />,
-    title: 'For product managers',
+    title: 'Continuous Integration and Deployment (CI/CD)',
     description:
-      'Quickly put together ideas and high-fidelity mockups/prototypes using components from your actual product.',
+      'Implementing CI/CD pipelines automates the build, testing, and deployment processes, ensuring that code changes are integrated and deployed efficiently.',
   },
   {
     icon: <CodeRounded fontSize="small" color="primary" />,
-    title: 'For developers',
+    title: 'Modular Design and Microservices Architecture',
     description:
-      'Effortlessly communicate with designers using the same language around the Material UI components props and variants.',
+      'Breaking down the EpicChain platform into smaller, modular components using a microservices architecture enables independent development, deployment, and scaling of services.',
   },
 ];
 
@@ -34,11 +34,9 @@ export default function DesignKitValues() {
   return (
     <Section cozy>
       <SectionHeadline
-        overline="Collaboration"
         title={
           <Typography variant="h2" sx={{ mt: 1 }}>
-            Be more efficient <GradientText>designing and developing</GradientText> with the same
-            library
+            Efficient <GradientText>EpicChain Development </GradientText> Practices
           </Typography>
         }
       />

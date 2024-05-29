@@ -122,47 +122,7 @@ export default function CoreShowcase() {
         </ThemeProvider>
       }
       code={
-        <div data-mui-color-scheme="dark">
-          <Box
-            sx={{
-              pb: 1.5,
-              display: 'flex',
-              alignItems: 'center',
-              gap: 1,
-              right: 0,
-              zIndex: 10,
-              [`& .${buttonClasses.root}`]: {
-                borderRadius: 40,
-                padding: '2px 10px',
-                fontSize: '0.75rem',
-                lineHeight: 18 / 12,
-              },
-              '& .MuiButton-outlinedPrimary': {
-                backgroundColor: alpha(globalTheme.palette.primary[900], 0.5),
-              },
-            }}
-          >
-            <Button
-              size="small"
-              variant="outlined"
-              color={customized ? 'secondary' : 'primary'}
-              onClick={() => {
-                setCustomized(false);
-              }}
-            >
-              Material Design
-            </Button>
-            <Button
-              size="small"
-              variant="outlined"
-              color={customized ? 'primary' : 'secondary'}
-              onClick={() => {
-                setCustomized(true);
-              }}
-            >
-              Custom Theme
-            </Button>
-          </Box>
+        <div data-mui-color-scheme="dark"> 
           <Box
             sx={{
               position: 'relative',

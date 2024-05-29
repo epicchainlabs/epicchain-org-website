@@ -17,13 +17,12 @@ export default function XComponents() {
       <Grid container spacing={2}>
         <Grid md={6}>
           <SectionHeadline
-            overline="Advanced React component library"
             title={
               <Typography variant="h2">
-                Powerful components for <GradientText>advanced use cases</GradientText>
+                Cornerstone of EpicChain's <GradientText>Security Architecture</GradientText>
               </Typography>
             }
-            description="The MUI X packages can power complex and data-intensive applications across a wide spectrum of use cases."
+            description="Quantum Guard Nexus is the cornerstone of EpicChain's security architecture, designed to provide top-tier protection for digital assets and transactions. By leveraging advanced cryptographic techniques."
           />
           <XComponentsSwitcher
             componentIndex={componentIndex}

@@ -99,27 +99,26 @@ export default function XTheming() {
       <Grid container spacing={2}>
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Theming"
             title={
               <Typography variant="h2">
-                Advanced and <GradientText>beautiful</GradientText>
+                The Advanced Features of <GradientText>Quantum Guard Nexus</GradientText>
               </Typography>
             }
-            description="Use sophisticated theming features to make the MUI X components look exactly how you want. Take this Data Grid as an example."
+            description="Quantum Guard Nexus is at the forefront of blockchain security, incorporating advanced technologies and strategies to ensure the utmost protection for digital assets and transactions. "
           />
           <Group sx={{ m: -2, p: 2 }}>
             <Highlighter disableBorder selected={customized} onClick={() => setCustomized(true)}>
               <Item
                 icon={<SvgTwinkle />}
-                title="Custom theme"
-                description="Theming allows you to use your brand's design tokens, easily making the components reflect its look and feel."
+                title="Real-Time Monitoring and Response"
+                description="Quantum Guard Nexus integrates real-time monitoring and response capabilities, allowing for immediate detection and mitigation of security incidents. "
               />
             </Highlighter>
             <Highlighter disableBorder selected={!customized} onClick={() => setCustomized(false)}>
               <Item
                 icon={<SvgMaterialDesign />}
-                title="Material Design"
-                description="Every component comes with Google's tried-and-tested design system, built-in and ready for use."
+                title="Comprehensive Audit Trails"
+                description="The system maintains detailed audit trails of all transactions and security events, providing transparency and accountability. "
               />
             </Highlighter>
           </Group>

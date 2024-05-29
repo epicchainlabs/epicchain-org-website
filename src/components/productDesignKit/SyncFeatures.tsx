@@ -43,34 +43,33 @@ export default function ConnectFeatures() {
       <Grid container spacing={2}>
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Available in Beta"
             title={
               <Typography variant="h2">
-                The way developers and designers <GradientText>ship faster</GradientText>
+                Shipping Faster, Innovating <GradientText>Sooner</GradientText>
               </Typography>
             }
-            description="The Sync plugin is perfect for designing and developing using the Material UI React library and Design Kit."
+            description="EpicChain developers are dedicated to accelerating the development and deployment of new features and updates."
           />
           <Group sx={{ m: -2, p: 2 }}>
             <Highlighter disableBorder {...getSelectedProps(0)} onClick={() => setIndex(0)}>
               <Item
                 icon={<ImagesearchRollerRoundedIcon color="primary" />}
-                title="Theme customization"
+                title="Agile Methodologies"
                 description="Generate theme code with custom colors, typography styles, shadows, spacing values, and border-radius."
               />
             </Highlighter>
             <Highlighter disableBorder {...getSelectedProps(1)} onClick={() => setIndex(1)}>
               <Item
                 icon={<FormatShapesRoundedIcon color="primary" />}
-                title="Component customization"
-                description="Fully customize a component's design across multiple states and then generate the corresponding theme code."
+                title="CI/CD Pipelines"
+                description="Continuous integration and deployment pipelines automate the build, testing, and deployment processes, allowing developers to ship code changes faster and more frequently."
               />
             </Highlighter>
             <Highlighter disableBorder {...getSelectedProps(2)} onClick={() => setIndex(2)}>
               <Item
                 icon={<SvgStorybook />}
-                title="Preview your changes on Storybook"
-                description="Quickly visualize all the changes you run through Sync on a built-in Storybook preview instance."
+                title="Collaborative Development Environment"
+                description="EpicChain fosters a collaborative development environment where developers can share knowledge, collaborate on projects, and leverage each other's expertise."
               />
             </Highlighter>
           </Group>

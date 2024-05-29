@@ -34,17 +34,6 @@ export default function DesignSystemComponents() {
   });
   return (
     <Section ref={ref} cozy>
-      <SectionHeadline
-        alwaysCenter
-        overline="Production-ready components"
-        title={
-          <Typography variant="h2">
-            Beautiful and powerful,
-            <br /> <GradientText>right out of the box</GradientText>
-          </Typography>
-        }
-      />
-      {inView ? <MaterialDesignComponents /> : <Placeholder />}
     </Section>
   );
 }

@@ -18,7 +18,7 @@ import More from 'docs/src/components/action/More';
 import Frame from 'docs/src/components/action/Frame';
 import { Link } from '@mui/docs/Link';
 
-const DEMOS = ['Components', 'Branding', 'Iconography'];
+const DEMOS = ['Smart Contract Optimization', 'Scalability Solutions', 'Security Enhancements'];
 
 const Image = styled('img')(({ theme }) => ({
   transition: '0.4s',
@@ -137,54 +137,6 @@ export function MaterialDesignKitInfo() {
           mb: 0.5,
         }}
       >
-        <Typography variant="body2" fontWeight="semiBold">
-          Available in:
-        </Typography>
-        <Box sx={{ display: 'flex', gap: 1, '& >img': { width: 20, height: 20 } }}>
-          <img src="/static/branding/design-kits/figma-logo.svg" alt="Figma logo." loading="lazy" />
-          <img
-            src="/static/branding/design-kits/sketch-logo.svg"
-            alt="Sketch logo."
-            loading="lazy"
-          />
-          <img
-            src="/static/branding/design-kits/adobexd-logo.svg"
-            alt="Adobe XD logo."
-            loading="lazy"
-          />
-        </Box>
-      </Box>
-      <Typography variant="body2" color="text.secondary" mb={2}>
-        We frequently update them to stay up-to-date with the latest release.
-      </Typography>
-      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 1.5 }}>
-        <Button
-          component={Link}
-          variant="contained"
-          size="small"
-          noLinkStyle
-          href="https://mui.com/store/?utm_source=marketing&utm_medium=referral&utm_campaign=design-cta2#design"
-          endIcon={<ChevronRightRoundedIcon />}
-        >
-          Buy it now
-        </Button>
-        <Button
-          component={Link}
-          variant="outlined"
-          size="small"
-          color="secondary"
-          href="https://www.figma.com/community/file/912837788133317724/material-ui-for-figma-and-mui-x"
-          startIcon={
-            <img
-              src="/static/branding/design-kits/figma-logo.svg"
-              alt=""
-              loading="lazy"
-              style={{ width: 16, height: 16 }}
-            />
-          }
-        >
-          Figma Preview
-        </Button>
       </Box>
     </Frame.Info>
   );
@@ -202,13 +154,12 @@ export default function DesignKitsDemo() {
       <Grid container spacing={2} alignItems="center">
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Design Kits"
             title={
               <Typography variant="h2">
-                Enhance your <GradientText>design workflow</GradientText>
+                Enhancements for <GradientText>EpicChain Development</GradientText>
               </Typography>
             }
-            description="The Design Kits contain many of the Material UI components with states, variations, colors, typography, and icons."
+            description="In order to further improve the EpicChain ecosystem, several key enhancements can be implemented."
           />
           <Group desktopColumns={2} sx={{ m: -2, p: 2 }}>
             {DEMOS.map((name) => (

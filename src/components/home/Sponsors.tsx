@@ -10,14 +10,12 @@ export default function Sponsors() {
   return (
     <Section cozy>
       <SectionHeadline
-        id="sponsors"
-        overline="Sponsors"
         title={
           <Typography variant="h2" sx={{ my: 1 }}>
-            <GradientText>You</GradientText> make this possible
+            <GradientText>EpicChain</GradientText> is proud to be supported
           </Typography>
         }
-        description="The development of these open-source tools is accelerated by our generous sponsors."
+        description="diverse group of innovative and leading companies from around the globe."
       />
       <DiamondSponsors />
       <GoldSponsors />

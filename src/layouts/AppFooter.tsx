@@ -54,10 +54,10 @@ export default function AppFooter(props: AppFooterProps) {
             <SvgMuiLogotype height={28} width={91} />
           </Link>
           <Typography variant="body2" fontWeight="semiBold" gutterBottom>
-            Keep up to date
+          Never miss an important update.
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-            Join our newsletter for regular updates. No spam ever.
+          Stay informed with the latest updates, features, and announcements from EpicChain!
           </Typography>
           <EmailSubscribe />
         </div>
@@ -71,19 +71,19 @@ export default function AppFooter(props: AppFooterProps) {
         >
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <Typography fontWeight="semiBold" variant="body2" sx={{ mb: 0.5 }}>
-              Products
+              Cutting-Edge
             </Typography>
             <Link prefetch={false} href={ROUTES.productMaterial}>
-              Material UI
+            Qtum Guard Nexus
             </Link>
             <Link prefetch={false} href={ROUTES.productBase}>
-              Base UI
+            Qtum Vault Asset
             </Link>
             <Link prefetch={false} href={ROUTES.productAdvanced}>
-              MUI X
+            Smart Contracts
             </Link>
             <Link prefetch={false} href={ROUTES.productToolpad}>
-              Toolpad
+            Governance
             </Link>
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -178,13 +178,13 @@ export default function AppFooter(props: AppFooterProps) {
         sx={{ my: 4 }}
       >
         <Typography color="text.tertiary" variant="caption" fontWeight={400}>
-          Copyright © {new Date().getFullYear()} Material UI SAS, trading as MUI.
+          Copyright © {new Date().getFullYear()} EpicChain. All Rights Reserved
         </Typography>
         <Stack spacing={1} direction="row" flexWrap="wrap" useFlexGap>
           <IconButton
             target="_blank"
             rel="noopener"
-            href="https://github.com/mui"
+            href="https://github.com/epicchainlabs"
             aria-label="github"
             title="GitHub"
             size="small"
@@ -194,17 +194,7 @@ export default function AppFooter(props: AppFooterProps) {
           <IconButton
             target="_blank"
             rel="noopener"
-            href={ROUTES.rssFeed}
-            aria-label="RSS Feed"
-            title="RSS Feed"
-            size="small"
-          >
-            <RssFeedIcon fontSize="small" />
-          </IconButton>
-          <IconButton
-            target="_blank"
-            rel="noopener"
-            href="https://twitter.com/MUI_hq"
+            href="https://twitter.com/epicchainlabs"
             aria-label="twitter"
             title="X"
             size="small"
@@ -214,17 +204,7 @@ export default function AppFooter(props: AppFooterProps) {
           <IconButton
             target="_blank"
             rel="noopener"
-            href="https://www.linkedin.com/company/mui/"
-            aria-label="linkedin"
-            title="LinkedIn"
-            size="small"
-          >
-            <LinkedInIcon fontSize="small" />
-          </IconButton>
-          <IconButton
-            target="_blank"
-            rel="noopener"
-            href="https://www.youtube.com/@MUI_hq"
+            href="https://www.youtube.com/@epicchainlabs"
             aria-label="YouTube"
             title="YouTube"
             size="small"

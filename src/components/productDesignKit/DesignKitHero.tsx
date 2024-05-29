@@ -32,24 +32,14 @@ export default function TemplateHero() {
               }),
             })}
           >
-            <IconImage width={28} height={28} loading="eager" name="product-designkits" /> Design
-            Kits
           </Typography>
           <Typography variant="h1" sx={{ my: 2, maxWidth: 500 }}>
-            Material UI
-            <br /> in your favorite
-            <br /> <GradientText>design tool</GradientText>
+          Building a Foundation 
+            <br /> <GradientText>for Growth</GradientText>
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3, maxWidth: 450 }}>
-            Pick your favorite design tool to enjoy and use Material UI components. Boost
-            consistency and facilitate communication when working with developers.
+          EpicChain's scalable network infrastructure is designed to support the future growth and expansion of the EpicChain ecosystem. With a focus on scalability, reliability, and performance, our network infrastructure is built to meet the demands of a rapidly evolving blockchain landscape.
           </Typography>
-          <GetStartedButtons
-            primaryLabel="Buy now"
-            primaryUrl="https://mui.com/store/?utm_source=marketing&utm_medium=referral&utm_campaign=design-cta#design"
-            secondaryLabel="Figma Preview"
-            secondaryUrl="https://www.figma.com/community/file/912837788133317724/material-ui-for-figma-and-mui-x"
-          />
         </Box>
       }
       right={

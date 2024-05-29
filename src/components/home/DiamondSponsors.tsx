@@ -11,21 +11,71 @@ import SponsorCard from 'docs/src/components/home/SponsorCard';
 const DIAMONDs = [
   {
     src: '/static/sponsors/octopus-square.svg',
-    name: 'Octopus Deploy',
-    description: 'A unified DevOps automation platform for your team',
-    href: 'https://octopus.com/?utm_source=MUI&utm_medium=referral&utm_content=homepage',
+    name: 'QuantumGuard Technologie',
+    description: 'Specializing in advanced security solutions for digital assets',
+    href: 'https://quantumguard.tech',
+  },
+  
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'Nexus Ventures',
+    description: 'A prominent venture capital firm focusing on blockchain and fintech startups',
+    href: 'https://nexusventures.com',
   },
   {
-    src: '/static/sponsors/doit-square.svg',
-    name: 'Doit International',
-    description: 'Management platform for Google Cloud and AWS',
-    href: 'https://www.doit.com/flexsave/?utm_source=MUI&utm_medium=referral&utm_content=homepage',
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'EpicFund Capital',
+    description: 'Dedicated to supporting blockchain initiatives',
+    href: 'https://epicfundcapital.com',
+  },
+  
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'SmartContract Solutions',
+    description: 'Experts in smart contract development, SmartContract Solutions helps streamline and secure transactions',
+    href: 'https://smartcontractsolutions.com',
   },
   {
-    src: '/static/sponsors/marblism-square.svg',
-    name: 'Marblism',
-    description: 'Generate fully functional web apps using AI.',
-    href: 'https://www.marblism.com/?utm_source=mui',
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'VaultAsset Partners',
+    description: 'Specializing in asset management and digital custody, VaultAsset Partners ensures seamless and secure',
+    href: 'https://vaultassetpartners.com',
+  },
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'GlobalTech Enterprises',
+    description: 'A multinational technology company, GlobalTech Enterprises brings global expertise and resources',
+    href: 'https://globaltechenterprises.com',
+  },
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'CryptoExchange Alliance',
+    description: 'A coalition of leading cryptocurrency exchanges, CryptoExchange Alliance promotes the adoption',
+    href: 'https://cryptoexchangealliance.org',
+  },
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'InnoChain Labs',
+    description: 'Focused on blockchain innovation, InnoChain Labs conducts research and development',
+    href: 'https://innochainlabs.com',
+  },
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'BlockWave Innovations',
+    description: 'A leader in blockchain technology development',
+    href: 'https://blockwave.io',
+  },
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'Decentralized Solutions Group',
+    description: 'A leader in blockchain technology development',
+    href: 'https://decentralizedsolutions.com',
+  },
+  {
+    src: '/static/sponsors/octopus-square.svg',
+    name: 'NextGen Blockchain Ventures',
+    description: 'Investing in the future of blockchain, NextGen Blockchain Ventures supports projects that contribute',
+    href: 'https://nextgenblockchainventures.com',
   },
 ];
 
@@ -53,7 +103,7 @@ export default function DiamondSponsors() {
           WebkitTextFillColor: 'transparent',
         })}
       >
-        Diamond
+        Sponsors of EpicChain
       </Typography>
       <Grid container spacing={{ xs: 2, md: 3 }}>
         {DIAMONDs.map((item) => (
@@ -93,12 +143,12 @@ export default function DiamondSponsors() {
               </IconButton>
               <div>
                 <Typography variant="body2" color="text.primary" fontWeight="bold">
-                  Become our sponsor!
+                  Become EpicChain! Sponsors
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   To join us, contact us at{' '}
-                  <Link href="mailto:sales@mui.com" target="_blank" rel="noopener">
-                    sales@mui.com
+                  <Link href="mailto:sponsor@epicchain.org" target="_blank" rel="noopener">
+                  sponsor@epicchain.org
                   </Link>{' '}
                   for pre-approval.
                 </Typography>

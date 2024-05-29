@@ -103,24 +103,13 @@ export default function XRoadmap() {
       <Grid container spacing={2} alignItems="center" justifyContent="space-between">
         <Grid xs={12} md={5}>
           <SectionHeadline
-            overline="Roadmap"
             title={
               <Typography variant="h2">
-                Follow the <GradientText>MUI X roadmap</GradientText> for future updates
+                Shaping the <GradientText>Future of Blockchain</GradientText> Technology
               </Typography>
             }
-            description="It's just the beginning for the MUI X components. Stay tuned for exciting news and updates coming soon!"
+            description="The EpicChain roadmap outlines our strategic vision and development milestones as we strive to revolutionize the blockchain landscape. Here's a detailed look at our roadmap"
           />
-          <Button
-            component={Link}
-            href={ROUTES.xRoadmap}
-            noLinkStyle
-            variant="contained"
-            endIcon={<KeyboardArrowRightRounded />}
-            sx={{ width: { xs: '100%', sm: 'auto' } }}
-          >
-            See the roadmap
-          </Button>
         </Grid>
         <Grid
           xs={12}
@@ -142,95 +131,36 @@ export default function XRoadmap() {
           <Grid xs={12} sm={4} lg="auto">
             <Paper variant="outlined">
               <Typography component="div" fontWeight="bold" variant="body2" color="text.primary">
-                Stable
+              Development and Foundation Building (2024)
                 <RoadmapStatusDot color="success.main" />
               </Typography>
               {renderList(
                 <React.Fragment>
                   <PivotTableChartRoundedIcon sx={{ fontSize: 16 }} />
-                  Data Grid
+                  April 4, 2024: EpicChain Mainnet Launch
                   <CalendarMonthRoundedIcon sx={{ fontSize: 16 }} />
-                  Date and Time Pickers
+                  Q3 2024: Complete development of EpicChain
                   <BarChartRounded sx={{ fontSize: 16 }} />
-                  Charts
-                  <AccountTreeRounded sx={{ fontSize: 16 }} />
-                  Tree View
+                  Q4 2024: Launch EpicChain Mobile Wallet 
                 </React.Fragment>,
               )}
             </Paper>
           </Grid>
+
           <Grid xs={12} sm={4} lg="auto">
             <Paper variant="outlined">
               <Typography component="div" fontWeight="bold" variant="body2" color="text.primary">
-                Work in progress
-                <RoadmapStatusDot color="warning.main" />
+              Ecosystem Expansion and Community Growth (2025)
+                <RoadmapStatusDot color="success.main" />
               </Typography>
               {renderList(
                 <React.Fragment>
-                  <Box
-                    sx={{
-                      lineHeight: 0,
-                    }}
-                  >
-                    <PivotTableChartRoundedIcon sx={{ fontSize: 16 }} />
-                  </Box>
-                  Data Grid
-                  {bullet}
-                  <Typography variant="body2" color="text.secondary" fontWeight="medium">
-                    Pivoting
-                  </Typography>
-                  {bullet}
-                  <Typography variant="body2" color="text.secondary" fontWeight="medium">
-                    Charts integration
-                  </Typography>
-                  {bullet}
-                  <Link href={ROUTES.dataGridFeaturesComparison} sx={{ color: 'primary.300' }}>
-                    And more!
-                  </Link>
-                </React.Fragment>,
-                true,
-              )}
-              {renderList(
-                <React.Fragment>
-                  <Box
-                    sx={{
-                      lineHeight: 0,
-                    }}
-                  >
-                    <AccountTreeRounded sx={{ fontSize: 16 }} />
-                  </Box>
-                  Tree View
-                  {bullet}
-                  <Typography variant="body2" color="text.secondary" fontWeight="medium">
-                    Virtualization
-                  </Typography>
-                  {bullet}
-                  <Typography variant="body2" color="text.secondary" fontWeight="medium">
-                    Drag and Drop
-                  </Typography>
-                </React.Fragment>,
-                true,
-              )}
-            </Paper>
-          </Grid>
-          <Grid xs={12} sm={4} lg="auto">
-            <Paper variant="outlined">
-              <Typography component="div" fontWeight="bold" variant="body2" color="text.primary">
-                Future components
-                <RoadmapStatusDot color="primaryDark.400" />
-              </Typography>
-              {renderList(
-                <React.Fragment>
-                  <AutoGraphRoundedIcon sx={{ fontSize: 16 }} />
-                  Sparkline
-                  <FormatSizeRoundedIcon sx={{ fontSize: 16 }} />
-                  Rich Text Editor
-                  <FileUploadRounded sx={{ fontSize: 16 }} />
-                  Upload
-                  <PendingActionsRounded sx={{ fontSize: 16 }} />
-                  Scheduler
-                  <SpeedRounded sx={{ fontSize: 16 }} />
-                  Gauge
+                  <PivotTableChartRoundedIcon sx={{ fontSize: 16 }} />
+                  Q1 2025: Partner with additional exchanges for EpicChain (XPR) and EpicPulse (XPP) listings
+                  <CalendarMonthRoundedIcon sx={{ fontSize: 16 }} />
+                  Q2 2025: Introduce decentralized applications (dApps) on the EpicChain ecosystem
+                  <BarChartRounded sx={{ fontSize: 16 }} />
+                  Q3 2025: Expand EpicChain community through strategic partnerships and developer outreach programs 
                 </React.Fragment>,
               )}
             </Paper>

@@ -13,27 +13,27 @@ import { InfoCard } from '@mui/docs/InfoCard';
 const content = [
   {
     icon: <InvertColorsRoundedIcon fontSize="small" color="primary" />,
-    title: 'Timeless aesthetics',
+    title: 'Unparalleled Security',
     description:
-      "Build beautiful UIs with ease. Start with Google's Material Design, or create your own sophisticated theme.",
+      "EpicChain leverages state-of-the-art security protocols to safeguard digital assets, ensuring top-tier protection against cyber threats. Our robust security framework guarantees the safety and reliability of your transactions and data.",
   },
   {
     icon: <HandymanRoundedIcon fontSize="small" color="primary" />,
-    title: 'Intuitive customization',
+    title: 'Advanced Asset Management',
     description:
-      'Our components are as flexible as they are powerful. You always have full control over how they look and behave.',
+      'EpicChain provides sophisticated asset management tools that enable seamless and secure handling of digital assets. This feature offers enhanced control, efficiency, and security in managing your digital portfolio.',
   },
   {
     icon: <ArticleRoundedIcon fontSize="small" color="primary" />,
-    title: 'Unrivaled documentation',
+    title: 'Developer-Friendly Platform',
     description:
-      'The answer to your problem can be found in our docs. How can we be so sure? Because our docs boast over 2,000 contributors.',
+      'EpicChain supports smart contracts in various programming languages, making it a versatile and inclusive platform for developers. This flexibility promotes innovation and allows developers to create and deploy complex applications effortlessly.',
   },
   {
     icon: <AccessibilityNewRounded fontSize="small" color="primary" />,
-    title: 'Dedicated to accessibility',
+    title: 'Community-Driven Decision Making',
     description:
-      "We believe in building for everyone. That's why accessibility is a high priority with every new feature we ship.",
+      "EpicChain’s decentralized governance model empowers token holders to participate in network decisions, fostering a democratic and engaged community. Participants are rewarded for their involvement, incentivizing active and meaningful contributions.",
   },
 ];
 
@@ -41,11 +41,10 @@ export default function ValueProposition() {
   return (
     <Section>
       <SectionHeadline
-        overline="Why build with MUI?"
         title={
           <Typography variant="h2" sx={{ mt: 1, mb: { xs: 2, sm: 4 } }}>
-            A <GradientText>delightful experience</GradientText> <br />
-            for you and your users
+            <GradientText>Compelling Reasons to</GradientText> <br />
+            Build on EpicChain
           </Typography>
         }
       />

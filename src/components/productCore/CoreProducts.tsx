@@ -8,29 +8,29 @@ import { InfoCard } from '@mui/docs/InfoCard';
 const content = [
   {
     // icon:
-    title: 'Material UI',
-    description: "An open-source React component library that implements Google's Material Design.",
+    title: 'Quantum-Resistant Encryption',
+    description: "Quantum Guard Nexus utilizes advanced cryptographic techniques that are resistant to quantum attacks, ensuring the security and integrity of digital assets and transactions.",
     link: '/material-ui/',
   },
   {
     // icon:
-    title: 'Joy UI',
+    title: 'Dynamic Threat Intelligence',
     description:
-      "An open-source React component library that implements MUI's own in-house design principles.",
+      "Quantum Guard Nexus integrates dynamic threat intelligence to continuously monitor and analyze potential security threats.",
     link: '/joy-ui/getting-started/',
   },
   {
     // icon:
-    title: 'Base UI',
+    title: 'Decentralized Security Governance',
     description:
-      "A library of unstyled React components and low-level hooks. With Base UI, you gain complete control over your app's CSS and accessibility features.",
+      "Quantum Guard Nexus incorporates decentralized security governance, enabling token holders to participate in the decision-making process regarding security policies and measures.",
     link: '/base-ui/',
   },
   {
     // icon:
-    title: 'MUI System',
+    title: 'Secure Smart Contract Execution',
     description:
-      'A set of CSS utilities to help you build custom designs more efficiently. It makes it possible to rapidly lay out custom designs.',
+      'Quantum Guard Nexus ensures the secure execution of smart contracts by implementing safeguards against common vulnerabilities.',
     link: '/system/getting-started/',
   },
 ];

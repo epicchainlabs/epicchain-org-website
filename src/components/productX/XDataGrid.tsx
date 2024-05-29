@@ -24,7 +24,7 @@ import XGridGlobalStyles from 'docs/src/components/home/XGridGlobalStyles';
 import StylingInfo from 'docs/src/components/action/StylingInfo';
 import ROUTES from 'docs/src/route';
 
-const DEMOS = ['Editing', 'Selection', 'Sorting', 'Pagination', 'Filtering'] as const;
+const DEMOS = ['High-Speed Encryption', 'Scalability', 'Compliance', 'Security Audits', 'Reliability'] as const;
 
 const code = `<DataGrid
   columns={[ // column definition example
@@ -121,14 +121,12 @@ export default function XDataGrid() {
       <Grid container spacing={2}>
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Data Grid"
             title={
               <Typography variant="h2">
-                A level of <GradientText>performance and quality</GradientText> that hasn&apos;t
-                been seen before
+                Performance and <GradientText>Quality Assurance for Quantum</GradientText> Guard Nexus
               </Typography>
             }
-            description="The MUI X Data Grid is a data table powerhouse. It is packed with exclusive features that will enrich the experience of dealing with and maintaining lots of data."
+            description="Quantum Guard Nexus is engineered with a relentless focus on performance and quality assurance, ensuring the highest standards of security and efficiency for the EpicChain ecosystem."
           />
           <Group desktopColumns={2} sx={{ m: -2, p: 2 }}>
             {DEMOS.map((name) => (

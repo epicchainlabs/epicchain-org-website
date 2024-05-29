@@ -14,17 +14,14 @@ export default function CoreHero() {
         alwaysCenter
         overline={
           <Stack direction="row" justifyContent="center" alignItems="center">
-            <IconImage loading="eager" width={28} height={28} name="product-core" sx={{ mr: 1 }} />{' '}
-            MUI Core
           </Stack>
         }
         title={
           <Typography component="h1" variant="h2" sx={{ textAlign: 'center' }} gutterBottom>
-            Ready to use components <GradientText>free forever</GradientText>
+            Enhancing Blockchain <GradientText>Security</GradientText>
           </Typography>
         }
-        description="Get a growing list of React components and utilities, ready-to-use, free forever, and with
-        accessibility always in mind. We've built the foundational UI blocks for your design system so you don't have to."
+        description="Quantum Guard Nexus employs cutting-edge encryption algorithms that are resistant to quantum attacks, ensuring the security and confidentiality of digital assets and transactions."
       />
     </Section>
   );

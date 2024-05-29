@@ -96,29 +96,28 @@ export default function XComponentsSwitcher(props: {
   const { componentIndex, setComponentIndex } = props;
   const componentElement = [
     <ComponentItem
-      name="Data Grid"
-      label="Fast, feature-rich data table."
-      description="Fast, feature-rich data table."
+      name="Advanced Cryptographic Techniques"
+      description="Quantum Guard Nexus utilizes cutting-edge cryptographic algorithms to secure digital assets and transactions."
       icon={<PivotTableChartRoundedIcon />}
       href={ROUTES.dataGridOverview}
     />,
     <ComponentItem
-      name="Date and Time Pickers"
-      description="A suite of components for selecting dates, times, and ranges."
+      name="Multi-Layered Security Protocols"
+      description="Quantum Guard Nexus is designed with a multi-layered approach, integrating various security protocols to create a robust defense system."
       label="A suite of components for selecting dates, times, and ranges."
       icon={<CalendarMonthRoundedIcon />}
       href={ROUTES.datePickersOverview}
     />,
     <ComponentItem
-      name="Charts"
-      description="Data visualization graphs, including bar, line, pie, scatter, and more."
+      name="Real-Time Threat Detection"
+      description="Quantum Guard Nexus features real-time threat detection mechanisms to identify and mitigate potential security breaches as they occur.."
       label="Data visualization graphs, including bar, line, pie, scatter, and more."
       icon={<BarChartRoundedIcon />}
       href={ROUTES.chartsOverview}
     />,
     <ComponentItem
-      name="Tree View"
-      description="Display hierarchical data, such as a file system navigator."
+      name="Decentralized Security Governance"
+      description="Quantum Guard Nexus empowers the community through decentralized security governance, allowing token holders to participate in security-related decision-making processes."
       label="Display hierarchical data, such as a file system navigator."
       icon={<AccountTreeRounded />}
       href={ROUTES.treeViewOverview}

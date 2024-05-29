@@ -40,13 +40,12 @@ export default function MaterialEnd({ noFaq }: MaterialEndProps) {
             overline="Community"
             title={
               <Typography variant="h2">
-                Join our <GradientText>global community</GradientText>
+                Stay Connected <GradientText>with EpicChain</GradientText>
               </Typography>
             }
             description={
               <React.Fragment>
-                Material UI wouldn&apos;t be possible without our global community of contributors.
-                Join us today to get help when you need it, and lend a hand when you can.
+                Join our vibrant community of blockchain enthusiasts, developers, and investors to stay updated on the latest developments, events, and opportunities within the EpicChain ecosystem. Whether you're a seasoned blockchain expert or just starting your journey, there's a place for you in the EpicChain community.
               </React.Fragment>
             }
           />
@@ -54,32 +53,22 @@ export default function MaterialEnd({ noFaq }: MaterialEndProps) {
             primaryUrl={ROUTES.materialDocs}
             secondaryLabel="View templates"
             secondaryUrl={ROUTES.freeTemplates}
-            altInstallation="npm install @mui/material @emotion/react @emotion/styled"
           />
         </Box>
       ) : (
         <Grid container spacing={{ xs: 6, sm: 10 }} alignItems="center">
           <Grid xs={12} sm={6}>
             <SectionHeadline
-              overline="Community"
               title={
                 <Typography variant="h2">
-                  Join our <GradientText>global community</GradientText>
+                  Stay Connected <GradientText>with EpicChain</GradientText>
                 </Typography>
               }
               description={
                 <React.Fragment>
-                  Material UI wouldn&apos;t be possible without our global community of
-                  contributors. Join us today to get help when you need it, and lend a hand when you
-                  can.
+                  Join our vibrant community of blockchain enthusiasts, developers, and investors to stay updated on the latest developments, events, and opportunities within the EpicChain ecosystem. Whether you're a seasoned blockchain expert or just starting your journey, there's a place for you in the EpicChain community.
                 </React.Fragment>
               }
-            />
-            <GetStartedButtons
-              primaryUrl={ROUTES.materialDocs}
-              secondaryLabel="View templates"
-              secondaryUrl={ROUTES.freeTemplates}
-              altInstallation="npm install @mui/material @emotion/react @emotion/styled"
             />
           </Grid>
           <Grid xs={12} sm={6}>

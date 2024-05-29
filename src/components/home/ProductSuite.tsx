@@ -51,13 +51,12 @@ export default function ProductSuite() {
       <Grid container spacing={2}>
         <Grid md={6}>
           <SectionHeadline
-            overline="Products"
             title={
               <Typography variant="h2">
-                Every component you need is <GradientText>ready for production</GradientText>
+                Discover EpicChain's <GradientText>Cutting-Edge Features</GradientText>
               </Typography>
             }
-            description="Build at an accelerated pace without sacrificing flexibility or control."
+            description="EpicChain is at the forefront of blockchain innovation, offering a suite of advanced features designed to enhance security, efficiency, and user engagement."
           />
           <ProductsSwitcher
             inView={inView}

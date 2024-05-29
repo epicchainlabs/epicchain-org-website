@@ -56,28 +56,28 @@ const UList = styled('ul')({
 
 const PRODUCTS = [
   {
-    name: 'MUI Core',
-    description: 'Ready-to-use foundational React components, free forever.',
+    name: 'Overview',
+    description: 'An introductory page providing a high-level summary of what EpicChain offers, including key functionalities and benefits..',
     href: ROUTES.productCore,
   },
   {
-    name: 'MUI X',
-    description: 'Advanced and powerful components for complex use cases.',
+    name: 'Features',
+    description: 'Detailed information about the specific features of EpicChain, showcasing the unique tools and capabilities available to users.',
     href: ROUTES.productAdvanced,
   },
   {
-    name: 'Templates',
-    description: 'Fully built, out-of-the-box, templates for your application.',
+    name: 'Pricing',
+    description: 'Information on the various pricing plans for EpicChain, including details on what each plan offers and how much it costs.',
     href: ROUTES.productTemplates,
   },
   {
-    name: 'Design Kits',
-    description: 'Material UI components in your favorite design tool.',
+    name: 'Roadmap',
+    description: 'A timeline of past, present, and future developments for EpicChain, outlining major milestones and upcoming features.',
     href: ROUTES.productDesignKits,
   },
   {
-    name: 'Toolpad',
-    description: 'Low-code admin builder.',
+    name: 'FAQs',
+    description: 'A collection of frequently asked questions and their answers, helping users quickly find solutions to common queries about EpicChain.',
     href: ROUTES.productToolpad,
     chip: 'Beta',
   },
@@ -85,35 +85,29 @@ const PRODUCTS = [
 
 const DOCS = [
   {
-    name: 'Material UI',
-    description: "Component library that implements Google's Material Design.",
+    name: 'Getting Started',
+    description: "A beginner-friendly guide to help new users set up and start using EpicChain, covering the basics and initial steps.",
     href: ROUTES.materialDocs,
   },
   {
-    name: 'Joy UI',
-    description: "Component library that implements MUI's own in-house design principles.",
+    name: 'API Reference',
+    description: "Comprehensive documentation of the EpicChain API, including endpoint details, parameters, responses, and example requests.",
     href: ROUTES.joyDocs,
   },
   {
-    name: 'Base UI',
-    description: 'Unstyled React components and low-level hooks.',
+    name: 'Tutorials',
+    description: 'Step-by-step tutorials that guide users through specific tasks and features of EpicChain, aimed at both beginners and advanced users.',
     href: ROUTES.baseDocs,
   },
   {
-    name: 'MUI System',
-    description: 'CSS utilities for rapidly laying out custom designs.',
+    name: 'SDKs',
+    description: 'Information and downloads for the various Software Development Kits (SDKs) provided by EpicChain, enabling developers to integrate EpicChain with other applications.',
     href: ROUTES.systemDocs,
   },
   {
-    name: 'MUI X',
-    description: 'Advanced components for complex use cases.',
+    name: 'Release Notes',
+    description: 'A log of all updates, changes, and bug fixes in each release of EpicChain, keeping users informed about the latest improvements and features.',
     href: ROUTES.xIntro,
-  },
-  {
-    name: 'Toolpad',
-    description: 'Low-code admin builder',
-    href: ROUTES.toolpadStudioDocs,
-    chip: 'Beta',
   },
 ];
 
@@ -294,7 +288,7 @@ export default function HeaderNavDropdown() {
               </li>
               <li>
                 <Anchor href={ROUTES.pricing} as={Link} noLinkStyle>
-                  Pricing
+                  Ecosystem
                 </Anchor>
               </li>
               <li>

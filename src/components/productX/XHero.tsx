@@ -104,17 +104,17 @@ export default function XHero() {
               }),
             })}
           >
-            <IconImage width={28} height={28} loading="eager" name="product-advanced" /> MUI X
           </Typography>
           <Typography variant="h1" sx={{ my: 2, maxWidth: 500 }}>
-            Performant
+          Quantum
             <br />
-            <GradientText>advanced</GradientText>
-            <br /> components
+            <GradientText> Guard</GradientText>
+            <br /> Nexus
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3, maxWidth: 500 }}>
-            Build complex and data-rich applications using a growing list of advanced React
-            components, like the Data Grid, Date and Time Pickers, Charts, and more!
+          leveraging advanced cryptographic techniques and innovative security protocols, 
+          Quantum Guard Nexus ensures the highest 
+          level of safety and integrity for all transactions on the EpicChain network!
           </Typography>
           <GetStartedButtons
             primaryUrl={ROUTES.xIntro}

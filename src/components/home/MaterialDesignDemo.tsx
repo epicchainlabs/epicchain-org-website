@@ -9,27 +9,62 @@ import MuiRating from '@mui/material/Rating';
 import { withPointer } from 'docs/src/components/home/ElementPointer';
 
 export const componentCode = `
-<Card>
-  <CardMedia
-    component="img"
-    alt="Yosemite National Park"
-    image="/static/images/cards/yosemite.jpeg"
-  />
-  <Stack direction="row" alignItems="center" spacing={3} p={2} useFlexGap>
-    <Stack direction="column" spacing={0.5} useFlexGap>
-      <Typography>Yosemite National Park, California, USA</Typography>
-      <Stack direction="row" spacing={1} useFlexGap>
-        <Chip
-          size="small"
-          label={active ? 'Active' : 'Inactive'}
-          color={active ? 'success' : 'default'}
-        />
-        <Rating defaultValue={4} size="small" />
-      </Stack>
-    </Stack>
-    <Switch checked={active} />
-  </Stack>
-</Card>
+using System;
+using System.Threading.Tasks;
+using EpicChain.SDK;
+using EpicChain.SDK.Transactions;
+
+namespace QuantumGuardNexus
+{
+    public class QuantumGuardNexusContract
+    {
+        private EpicChainClient client;
+
+        public QuantumGuardNexusContract(string rpcUrl, string accountAddress, string privateKey)
+        {
+            client = new EpicChainClient(rpcUrl, accountAddress, privateKey);
+        }
+
+        public async Task RegisterAssetAsync(string assetId, string ownerAddress)
+        {
+            var transaction = new { AssetId = assetId, Owner = ownerAddress };
+            var receipt = await client.SendTransactionAsync("YOUR_CONTRACT_ADDRESS", transaction);
+            Console.WriteLine("Asset Registered: " + receipt.TransactionHash);
+        }
+
+        public async Task TransferOwnershipAsync(string assetId, string newOwnerAddress)
+        {
+            var transaction = new { AssetId = assetId, NewOwner = newOwnerAddress };
+            var receipt = await client.SendTransactionAsync("YOUR_CONTRACT_ADDRESS", transaction);
+            Console.WriteLine("Ownership Transferred: " + receipt.TransactionHash);
+        }
+
+        public async Task VerifyOwnershipAsync(string assetId)
+        {
+            var query = new { AssetId = assetId };
+            var ownerAddress = await client.QueryAsync<string>("YOUR_CONTRACT_ADDRESS", "verifyOwnership", query);
+            Console.WriteLine("Current Owner: " + ownerAddress);
+        }
+    }
+
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var contract = new QuantumGuardNexusContract("https://api.epicchain.org", "YOUR_ACCOUNT_ADDRESS", "YOUR_PRIVATE_KEY");
+
+            string assetId = "ASSET123";
+            string ownerAddress = "0x1234567890abcdef1234567890abcdef12345678";
+            string newOwnerAddress = "0xabcdef1234567890abcdef1234567890abcdef12";
+
+            await contract.RegisterAssetAsync(assetId, ownerAddress);
+            await contract.VerifyOwnershipAsync(assetId);
+            await contract.TransferOwnershipAsync(assetId, newOwnerAddress);
+            await contract.VerifyOwnershipAsync(assetId);
+        }
+    }
+}
+
 `;
 
 const Card = withPointer(MuiCard, { id: 'card', name: 'Card' });
@@ -45,40 +80,7 @@ const Switch = withPointer(MuiSwitch, { id: 'switch', name: 'Switch' });
 export default function MaterialDesignDemo(props: CardProps) {
   const [active, setActive] = React.useState(true);
   return (
-    <Card {...props} sx={{ p: 2 }}>
-      <CardMedia
-        component="img"
-        alt="Yosemite National Park"
-        height="100"
-        image="/static/images/cards/yosemite.jpeg"
-        sx={{ borderRadius: 0.5 }}
-      />
-      <Stack alignItems="center" direction="row" spacing={3} mt={2} useFlexGap>
-        <Stack2 direction="column" spacing={0.5} useFlexGap>
-          <Typography fontWeight="semiBold">Yosemite National Park, California, USA</Typography>
-          <Stack3 direction="row" spacing={1} useFlexGap>
-            <Chip
-              label={active ? 'Active' : 'Inactive'}
-              color={active ? 'success' : 'default'}
-              size="small"
-              sx={{
-                width: 'fit-content',
-                fontSize: 12,
-                height: 20,
-                px: 0,
-                zIndex: 2,
-              }}
-            />
-            <Rating name="Rating component" defaultValue={4} size="small" />
-          </Stack3>
-        </Stack2>
-        <Switch
-          inputProps={{ 'aria-label': active ? 'Active' : 'Inactive' }}
-          checked={active}
-          onChange={(event) => setActive(event.target.checked)}
-          sx={{ ml: 'auto' }}
-        />
-      </Stack>
+    <Card>
     </Card>
   );
 }

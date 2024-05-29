@@ -216,7 +216,7 @@ export default function HeaderNavBar() {
             onClick={handleClickMenu('products')}
             aria-controls={subMenuOpen === 'products' ? 'products-popper' : undefined}
           >
-            Products
+            Cutting-Edge Features
           </ButtonBase>
           <Popper
             id="products-popper"
@@ -266,8 +266,8 @@ export default function HeaderNavBar() {
                         id={PRODUCT_IDS[0]}
                         href={ROUTES.productCore}
                         icon={<IconImage name="product-core" />}
-                        name="MUI Core"
-                        description="Ready-to-use foundational React components, free forever."
+                        name="Quantum Guard Nexus"
+                        description="Experience unparalleled security with our robust framework designed to safeguard your digital assets."
                       />
                     </li>
                     <li>
@@ -275,8 +275,8 @@ export default function HeaderNavBar() {
                         id={PRODUCT_IDS[1]}
                         href={ROUTES.productAdvanced}
                         icon={<IconImage name="product-advanced" />}
-                        name="MUI X"
-                        description="Advanced and powerful components for complex use cases."
+                        name="Quantum Vault Asset"
+                        description="Unlock advanced asset management tools and capabilities for seamless and efficient handling."
                       />
                     </li>
                     <li>
@@ -284,9 +284,8 @@ export default function HeaderNavBar() {
                         id={PRODUCT_IDS[2]}
                         href={ROUTES.productToolpad}
                         icon={<IconImage name="product-toolpad" />}
-                        name="Toolpad"
-                        chip={<Chip label="Beta" size="small" color="primary" variant="outlined" />}
-                        description="Low-code admin builder."
+                        name="Multi-Language Smart Contracts"
+                        description=" Benefit from support for a wide range of programming languages in our versatile smart contracts."
                       />
                     </li>
                     <li>
@@ -294,8 +293,8 @@ export default function HeaderNavBar() {
                         id={PRODUCT_IDS[3]}
                         href={ROUTES.productTemplates}
                         icon={<IconImage name="product-templates" />}
-                        name="Templates"
-                        description="Fully built, out-of-the-box, templates for your application."
+                        name="Decentralized Governance"
+                        description="Engage in our decentralized governance model where token holders can participate actively and earn rewards."
                       />
                     </li>
                     <li>
@@ -303,8 +302,8 @@ export default function HeaderNavBar() {
                         id={PRODUCT_IDS[4]}
                         href={ROUTES.productDesignKits}
                         icon={<IconImage name="product-designkits" />}
-                        name="Design Kits"
-                        description="Material UI components in your favorite design tool."
+                        name="Scalable Network Infrastructure"
+                        description="EpicChain's highly scalable network infrastructure ensures fast transaction processing and accommodates growing user demands."
                       />
                     </li>
                   </ul>

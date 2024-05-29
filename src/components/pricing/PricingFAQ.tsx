@@ -305,14 +305,14 @@ export default function PricingFAQ() {
               </Typography>
             </Box>
             <Typography variant="body2" color="text.secondary" sx={{ my: 1, textAlign: 'left' }}>
-              Email us at <Link href="mailto:sales@mui.com">sales@mui.com</Link> for sales-related
+              Email us at <Link href="mailto:devs@epicchain.org">devs@epicchain.org</Link> for sales-related
               questions.
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ my: 1, textAlign: 'left' }}>
               For product-related problems, please open
-              <Link href="https://github.com/mui/mui-x/issues/new/choose">a new GitHub issue</Link>.
+              <Link href="https://github.com/epicchainlabs/epicchain-org-website/issues/new/choose">a new GitHub issue</Link>.
               (If you need to share private information, you can{' '}
-              <Link href="mailto:x@mui.com">email</Link> us.)
+              <Link href="mailto:support@mui.com">email</Link> us.)
             </Typography>
           </Paper>
         </Grid>

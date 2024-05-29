@@ -82,15 +82,14 @@ export default function Hero() {
       left={
         <Box sx={{ textAlign: { xs: 'center', md: 'left' }, maxWidth: 500 }}>
           <Typography variant="h1" mb={1}>
-            <GradientText>Move faster</GradientText> <br />
-            with intuitive React UI tools
+            <GradientText>Next-Generation</GradientText> <br />
+            Ecosystem
           </Typography>
           <Typography color="text.secondary" mb={3}>
-            MUI offers a comprehensive suite of free UI tools to help you ship new features faster.
-            Start with Material UI, our fully-loaded component library, or bring your own design
-            system to our production-ready components.
+          EpicChain is a next-generation blockchain ecosystem designed for enhanced security, 
+          scalability, and versatility, supporting advanced smart contracts and decentralized applications.
           </Typography>
-          <GetStartedButtons primaryLabel="Discover the Core libraries" primaryUrl="/core/" />
+          <GetStartedButtons primaryLabel="Explore EpicChain" primaryUrl="/core/" />
         </Box>
       }
       rightSx={{

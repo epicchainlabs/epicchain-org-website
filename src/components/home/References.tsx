@@ -25,23 +25,6 @@ export default function References({
 }) {
   return (
     <Section cozy bg="transparent">
-      <Box sx={{ minHeight: { xs: 236, sm: 144, md: 52 } }}>
-        <CompaniesGrid data={companies} />
-      </Box>
-      <Typography
-        textAlign="center"
-        variant="body2"
-        color="text.secondary"
-        sx={{
-          mt: 4,
-          mx: 'auto',
-          maxWidth: 400,
-          minHeight: 42, // hard-coded to reduce CLS (layout shift)
-        }}
-      >
-        The world&apos;s best product teams trust MUI to deliver an unrivaled experience for both
-        developers and users.
-      </Typography>
     </Section>
   );
 }

@@ -25,16 +25,9 @@ export default function TaskCard() {
           boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.04)',
         }}
       >
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.8 }}>
-          <ScheduleRounded fontSize="inherit" />
-          <Typography variant="caption" fontWeight="semiBold">
-            March 25th
-          </Typography>
-        </Box>
         <Box sx={{ my: 'auto' }}>
-          <CodeRounded />
           <Typography fontSize={18} component="div" fontWeight="semiBold" sx={{ lineHeight: 1.4 }}>
-            Customize every button and chip instance primary color
+          Visionary Blockchain Innovator and Founder of EpicChain Labs
           </Typography>
         </Box>
         <Box sx={{ display: 'flex', gap: 1, py: 1, alignItems: 'center' }}>
@@ -54,10 +47,10 @@ export default function TaskCard() {
           </Box>
           <div>
             <Typography color="primary.100" fontWeight="semiBold" fontSize={12}>
-              Assigned to
+            Blockchain Science Expert, and Computer Programmer
             </Typography>
             <Typography id="demo-task-card-assignee-name" variant="body2" fontWeight="semiBold">
-              Lucas Smith
+              xmoohad
             </Typography>
           </div>
         </Box>
@@ -65,7 +58,7 @@ export default function TaskCard() {
           <LinearProgress
             aria-label="Progress"
             variant="determinate"
-            value={60}
+            value={91}
             sx={{
               flexGrow: 1,
               borderRadius: 10,
@@ -76,9 +69,6 @@ export default function TaskCard() {
               },
             }}
           />
-          <Typography color="primary.50" variant="body2" fontWeight={700} sx={{ ml: 2 }}>
-            60%
-          </Typography>
         </Box>
       </Card>
     </Fade>

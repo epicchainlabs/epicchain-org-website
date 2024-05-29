@@ -96,8 +96,8 @@ export default function ProductsSwitcher(props: {
     <ProductItem
       label="by going to the Core components page"
       icon={<IconImage name="product-core" />}
-      name="MUI Core"
-      description="Foundational components for shipping features faster. Includes Material UI."
+      name="Quantum Guard Nexus"
+      description="Our robust security framework ensures the highest level of protection for your digital assets, providing peace of mind in an increasingly digital world."
       href={ROUTES.productCore}
     />,
     <ProductItem
@@ -105,24 +105,24 @@ export default function ProductsSwitcher(props: {
       icon={<IconImage name="product-advanced" />}
       name={
         <Box component="span" sx={{ display: 'inline-flex', alignItems: 'center' }}>
-          MUI X
+          Quantum Vault Asset
         </Box>
       }
-      description="Advanced components for complex use cases."
+      description="With advanced asset management tools and capabilities, EpicChain makes managing your digital assets seamless and efficient, empowering you with greater control and flexibility."
       href={ROUTES.productAdvanced}
     />,
     <ProductItem
       label="by going to the templates page"
       icon={<IconImage name="product-templates" />}
-      name="Templates"
-      description="Professionally designed UI layouts to jumpstart your next project."
+      name="Multi-Language Smart Contracts"
+      description="EpicChain supports a variety of programming languages in its smart contracts, making it accessible and versatile for developers from different backgrounds and expertise levels."
       href={ROUTES.productTemplates}
     />,
     <ProductItem
       label="by going to the design-kits page"
       icon={<IconImage name="product-designkits" />}
-      name="Design kits"
-      description="Bring our components to your favorite design tool."
+      name="Decentralized Governance"
+      description="EpicChain promotes active participation in its ecosystem through decentralized governance, allowing token holders to have a voice in decision-making processes and earn rewards for their involvement."
       href={ROUTES.productDesignKits}
     />,
   ];

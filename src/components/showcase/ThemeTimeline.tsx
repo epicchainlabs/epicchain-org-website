@@ -56,8 +56,7 @@ export default function BasicTimeline() {
         </Box>
         <Box sx={{ ml: 2, flex: 1 }}>
           <Typography variant="body2" color="text.primary" gutterBottom>
-            Install one of our production-ready libraries to get your next app started inevitably
-            successful:
+          Pioneering the future with Quantum Guard Nexus and smart contract innovation
           </Typography>
           <Timeline
             sx={[
@@ -104,20 +103,20 @@ export default function BasicTimeline() {
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent>Material UI</TimelineContent>
+              <TimelineContent>Quantum Guard Nexus</TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent>Base UI</TimelineContent>
+              <TimelineContent>Quantum Vault Asset</TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineDot />
               </TimelineSeparator>
-              <TimelineContent>Joy UI</TimelineContent>
+              <TimelineContent>Multi-Language Smart Contracts</TimelineContent>
             </TimelineItem>
           </Timeline>
         </Box>

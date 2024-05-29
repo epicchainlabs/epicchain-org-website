@@ -170,33 +170,7 @@ export default function MaterialDesignKits({ gradient }: MaterialDesignKitsProps
               <MaterialDesignKitInfo />
             ) : (
               <Frame.Info data-mui-color-scheme="dark">
-                <Typography variant="body2" fontWeight="bold" gutterBottom>
-                  Get the beta version of Material UI Sync now!
-                </Typography>
-                <Typography variant="body2" color="text.secondary" mb={2}>
-                  There&apos;s still a lot to do, and we&apos;re looking forward to hearing from all
-                  of you.
-                </Typography>
-                <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 1.5 }}>
-                  <Button
-                    component={Link}
-                    variant="contained"
-                    size="small"
-                    noLinkStyle
-                    href="https://www.figma.com/community/plugin/1336346114713490235/material-ui-sync"
-                  >
-                    Use Sync now
-                  </Button>
-                  <Button
-                    component={Link}
-                    variant="outlined"
-                    color="secondary"
-                    size="small"
-                    href="/material-ui/design-resources/material-ui-sync/"
-                  >
-                    View documentation
-                  </Button>
-                </Box>
+               
               </Frame.Info>
             )}
           </Frame>
