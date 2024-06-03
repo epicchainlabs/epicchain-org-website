@@ -14,65 +14,53 @@ import Frame from 'docs/src/components/action/Frame';
 import PlayerCard from 'docs/src/components/showcase/PlayerCard';
 
 const code = `
-<Card
-  variant="outlined"
-  sx={{
-    p: 2,
-    width: { xs: '100%', sm: 'auto' },
-    display: 'flex',
-    flexDirection: { xs: 'column', sm: 'row' },
-    alignItems: 'center',
-    gap: 2,
-  }}
->
-  <CardMedia
-    component="img"
-    width="100"
-    height="100"
-    alt="Contemplative Reptile album cover"
-    src="/images/contemplative-reptile.jpg"
-    sx={{
-      width: { xs: '100%', sm: 100 },
-    }}
-  />
-  <Stack direction="column" alignItems="center" spacing={1} useFlexGap>
-    <div>
-      <Typography color="text.primary" fontWeight="semiBold">
-        Contemplative Reptile
-      </Typography>
-      <Typography
-        variant="caption"
-        color="text.secondary"
-        fontWeight="medium"
-        textAlign="center"
-        sx={{ width: '100%' }}
-      >
-        Sounds of Nature
-      </Typography>
-    </div>
-    <Stack direction="row" alignItems="center" spacing={1} useFlexGap>
-      <IconButton aria-label="Shuffle" disabled size="small">
-        <ShuffleRoundedIcon fontSize="small" />
-      </IconButton>
-      <IconButton aria-label="Fast rewind" disabled size="small">
-        <FastRewindRounded fontSize="small" />
-      </IconButton>
-      <IconButton
-        aria-label={paused ? 'Play music' : 'Pause music'}
-        onClick={() => setPaused((val) => !val)}
-        sx={{ mx: 1 }}
-      >
-        {paused ? <PlayArrowRounded /> : <PauseRounded />}
-      </IconButton>
-      <IconButton aria-label="Fast forward" disabled size="small">
-        <FastForwardRounded fontSize="small" />
-      </IconButton>
-      <IconButton aria-label="Loop music" disabled size="small">
-        <LoopRoundedIcon fontSize="small" />
-      </IconButton>
-    </Stack>
-  </Stack>
-</Card>`;
+using EpicChain.SDK.Contracts;
+using EpicChain.SDK.Contracts.Tokens;
+using EpicChain.SDK.Storage;
+using System;
+using System.Collections.Generic;
+
+public class EpicChainNFTContract : ERC721, IOwnable
+{
+    private ulong _nextTokenId = 0;
+    private Dictionary<ulong, string> _tokenURIs;
+    private string _baseURI;
+
+    public EpicChainNFTContract(string name, string symbol, string baseURI) : base(name, symbol)
+    {
+        Owner = Message.Sender;
+        _tokenURIs = new Dictionary<ulong, string>();
+        _baseURI = baseURI;
+    }
+
+    public Address Owner { get; private set; }
+
+    public void Mint(Address to, string tokenURI)
+    {
+        Require(Message.Sender == Owner, "Only owner can mint tokens");
+
+        _nextTokenId++;
+        _mint(to, _nextTokenId);
+        _tokenURIs[_nextTokenId] = tokenURI;
+    }
+
+    public string TokenURI(ulong tokenId)
+    {
+        return _tokenURIs[tokenId];
+    }
+
+    public void TransferOwnership(Address newOwner)
+    {
+        Require(Message.Sender == Owner, "Only owner can transfer ownership");
+        Owner = newOwner;
+    }
+
+    protected override string _baseTokenURI()
+    {
+        return _baseURI;
+    }
+}
+`;
 
 export default function MaterialTheming() {
   const [customized, setCustomized] = React.useState(true);
@@ -81,27 +69,26 @@ export default function MaterialTheming() {
       <Grid container spacing={2}>
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Theming"
             title={
               <Typography variant="h2">
-                Build <GradientText>your design system</GradientText> just as you want it to be
+                The Mint function <GradientText>is used to create </GradientText> a new NFTe
               </Typography>
             }
-            description="Start quickly with Material Design or use the advanced theming feature to easily tailor the components to your needs."
+            description="ensuring that unauthorized parties cannot mint new tokens."
           />
           <Group sx={{ m: -2, p: 2 }}>
             <Highlighter disableBorder selected={customized} onClick={() => setCustomized(true)}>
               <Item
                 icon={<AutoAwesomeRounded color="warning" />}
-                title="Custom Theme"
-                description="Theming allows you to use your brand's design tokens, easily making the components reflect its look and feel."
+                title="Authorization Check"
+                description="The function first checks if the sender of the transaction (i.e., the caller) is the owner of the contract. This is done using the Require statement, which throws an error if the condition is not met."
               />
             </Highlighter>
             <Highlighter disableBorder selected={!customized} onClick={() => setCustomized(false)}>
               <Item
                 icon={<SvgMaterialDesign />}
-                title="Material Design"
-                description="Every component comes with Google's tried and tested design system ready for use."
+                title="Token ID Generation"
+                description="The _nextTokenId is incremented by 1 to generate a unique ID for the new token."
               />
             </Highlighter>
           </Group>

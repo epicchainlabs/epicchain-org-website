@@ -52,9 +52,9 @@ export const authors = {
     github: 'siriwatknp',
   },
   'danilo-leal': {
-    name: 'Danilo Leal',
-    avatar: 'https://avatars.githubusercontent.com/u/67129314',
-    github: 'danilo-leal',
+    name: 'xmoohad',
+    avatar: 'https://avatars.githubusercontent.com/u/114765028',
+    github: 'xmoohad',
   },
   m4theushw: {
     name: 'Matheus Wichman',

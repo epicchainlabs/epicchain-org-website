@@ -163,17 +163,6 @@ export default function AppSettingsDrawer(props) {
           </IconToggleButton>
         </ToggleButtonGroup>
         <Heading gutterBottom>{t('settings.color')}</Heading>
-        <Button
-          component="a"
-          href="/material-ui/customization/color/#playground"
-          data-ga-event-category="settings"
-          data-ga-event-action="colors"
-          variant="outlined"
-          size="small"
-          fullWidth
-        >
-          {t('settings.editDocsColors')}
-        </Button>
       </Box>
     </Drawer>
   );

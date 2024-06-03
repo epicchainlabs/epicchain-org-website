@@ -340,13 +340,12 @@ export default function Team() {
           }}
         >
           <SectionHeadline
-            overline="Team"
             title={
               <Typography variant="h2" id="muiers">
-                Meet the <GradientText>MUIers</GradientText>
+                Global Talent <GradientText>Pool</GradientText>
               </Typography>
             }
-            description="Contributing from all corners of the world, MUI is a global, fully-remote team & community."
+            description="At EpicChain, we believe that innovation knows no boundaries."
           />
           <Button
             component={Link}
@@ -381,11 +380,10 @@ export default function Team() {
       <Box data-mui-color-scheme="dark" sx={{ bgcolor: 'common.black' }}>
         <Container sx={{ py: { xs: 4, sm: 8 } }}>
           <Typography component="h3" variant="h4" color="primary.200" fontWeight="semiBold">
-            Community contributors
+          24/7 Innovation Cycle
           </Typography>
           <Typography color="text.secondary" sx={{ maxWidth: { md: 500 } }}>
-            Special members of the community deserve a shout-out for their ever-lasting impact on
-            MUI&apos;s products.
+          With team members distributed across various time zones, EpicChain operates on a continuous innovation cycle.
           </Typography>
           <Grid container spacing={2} mt={2}>
             {contributors.map((profile) => (
@@ -396,11 +394,10 @@ export default function Team() {
           </Grid>
           <Divider sx={{ my: { xs: 2, sm: 6 } }} />
           <Typography component="h3" variant="h4" color="warning.300" fontWeight="semiBold">
-            Community emeriti
+          Inclusive Collaboration
           </Typography>
           <Typography color="text.secondary" sx={{ maxWidth: { md: 500 } }}>
-            We honor some no-longer-active core team members who have made valuable contributions in
-            the past. They advise us from time to time.
+          Collaboration is at the heart of our success. By embracing a remote and diverse workforce, we ensure that voices from all over the world are heard and valued.
           </Typography>
           <Grid container spacing={2} mt={2}>
             {emeriti.map((profile) => (

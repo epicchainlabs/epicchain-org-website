@@ -77,11 +77,10 @@ export default function MaterialEnd({ noFaq }: MaterialEndProps) {
                 <GlowingIconContainer icon={<CompareIcon color="primary" />} />
                 <div>
                   <Typography color="text.primary" fontWeight="semiBold" gutterBottom>
-                    Material UI vs. Base UI
+                  Quantum Connect
                   </Typography>
                   <Typography>
-                    Material UI implements Google&apos;s Material Design whereas Base UI features
-                    many of the same components, but without the Material Design implementation.
+                  Quantum Connect is EpicChain's innovative solution for ensuring users stay connected to the blockchain network.
                   </Typography>
                 </div>
               </ListItem>
@@ -89,19 +88,10 @@ export default function MaterialEnd({ noFaq }: MaterialEndProps) {
                 <GlowingIconContainer icon={<StyleRoundedIcon color="primary" />} />
                 <div>
                   <Typography color="text.primary" fontWeight="semiBold" gutterBottom>
-                    Does it support Material Design 3?
+                  Quantum Reach
                   </Typography>
                   <Typography>
-                    The adoption of Material Design 3 is tentatively planned for Material UI v7. See
-                    the{' '}
-                    <Link href="https://mui.com/versions/#release-schedule">
-                      the release schedule
-                    </Link>{' '}
-                    and follow{' '}
-                    <Link href="https://github.com/mui/material-ui/issues/29345">
-                      this GitHub issue
-                    </Link>{' '}
-                    for future updates.
+                  Quantum Reach is EpicChain's solution for extending network connectivity to a broader range of devices and users.
                   </Typography>
                 </div>
               </ListItem>

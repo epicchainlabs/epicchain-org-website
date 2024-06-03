@@ -21,29 +21,7 @@ export default function EditPage(props) {
   const crowdInPath = sourceLocation.substring(0, sourceLocation.lastIndexOf('/'));
 
   return (
-    <Button
-      component="a"
-      size="small"
-      variant="outlined"
-      color="secondary"
-      startIcon={<GitHubIcon sx={{ mr: 0.5 }} />}
-      href={
-        userLanguage === 'en'
-          ? `${process.env.SOURCE_CODE_REPO}/edit/${process.env.SOURCE_GITHUB_BRANCH}${sourceLocation}`
-          : `${CROWDIN_ROOT_URL}${crowdInLocale}#/${process.env.SOURCE_CODE_ROOT_URL.replace(
-              'https://github.com/mui/',
-              '',
-            ).replace('/blob/', '%20%2F%20')}${crowdInPath}`
-      }
-      target="_blank"
-      rel="noopener nofollow"
-      data-ga-event-category={userLanguage === 'en' ? undefined : 'l10n'}
-      data-ga-event-action={userLanguage === 'en' ? undefined : 'edit-button'}
-      data-ga-event-label={userLanguage === 'en' ? undefined : userLanguage}
-      sx={{ '&:hover > span': { transform: 'translateX(-2px)' } }}
-    >
-      {t('editPage')}
-    </Button>
+    <Button></Button>
   );
 }
 

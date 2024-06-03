@@ -18,52 +18,56 @@ import RealEstateCard from 'docs/src/components/showcase/RealEstateCard';
 import FlashCode from 'docs/src/components/animation/FlashCode';
 
 const code = `
-<Card
-  variant="outlined"
-  sx={{
-    p: 2,
-    display: 'flex',
-    flexWrap: 'wrap',
-    zIndex: 1,
-  }}
->
-  <CardMedia
-    component="img"
-    width="100"
-    height="100"
-    alt="123 Main St, Phoenix, AZ cover"
-    src="/images/real-estate.png"
-    sx={{
-      borderRadius: '6px',
-      width: { xs: '100%', sm: 100 },
-    }}
-  />
-  <Box sx={{ alignSelf: 'center', ml: 2 }}>
-    <Typography variant="body2" color="text.secondary" fontWeight="regular">
-      123 Main St, Phoenix, AZ, USA
-    </Typography>
-    <Typography fontWeight="bold" noWrap gutterBottom>
-      $280k - $310k
-    </Typography>
-    <Chip
-      size="small"
-      variant="outlined"
-      icon={<InfoRounded />}
-      label="Confidence score: 85%"
-      sx={(theme) => ({
-        '.MuiChip-icon': { fontSize: 16, ml: '4px', color: 'success.500' },
-        bgcolor: 'success.50',
-        borderColor: 'success.100',
-        color: 'success.900',
-        ...theme.applyDarkStyles({
-          bgcolor: 'primaryDark.700',
-          color: 'success.200',
-          borderColor: 'success.900',
-        }),
-      })}
-    />
-  </Box>
-</Card>`;
+// Import necessary crates and modules
+use epicchain_sdk::{epicchain_bindings, msg, storage};
+use serde::{Deserialize, Serialize};
+
+// Define the state structure
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
+pub struct State {
+    pub count: u64,
+}
+
+// Define the messages that the contract will handle
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
+pub enum HandleMsg {
+    Increment {},
+    Reset { count: u64 },
+}
+
+// Initialize the contract
+pub fn init<S: storage::Storage>(storage: &mut S, _msg: msg::InitMsg) -> Result<(), String> {
+    let state = State { count: 0 };
+    storage::set(storage, b"state", &state)?;
+    Ok(())
+}
+
+// Handle incoming messages
+pub fn handle<S: storage::Storage>(storage: &mut S, msg: HandleMsg) -> Result<(), String> {
+    let mut state: State = storage::get(storage, b"state").ok_or("State not found")?;
+    
+    match msg {
+        HandleMsg::Increment {} => {
+            state.count += 1;
+        }
+        HandleMsg::Reset { count } => {
+            state.count = count;
+        }
+    }
+    
+    storage::set(storage, b"state", &state)?;
+    Ok(())
+}
+
+// Query the current state
+pub fn query<S: storage::Storage>(storage: &S, _msg: msg::QueryMsg) -> Result<State, String> {
+    let state: State = storage::get(storage, b"state").ok_or("State not found")?;
+    Ok(state)
+}
+
+// Define the entry points for the contract
+epicchain_bindings!(init, handle, query);
+`;
 
 const startLine = [32, 21, 17];
 const endLine = [42, 26, 17];
@@ -163,34 +167,33 @@ export default function MaterialStyling() {
       <Grid container spacing={2}>
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Styling"
             title={
               <Typography variant="h2">
-                Rapidly add and tweak any styles using <GradientText>CSS utilities</GradientText>
+                Rapid Smart Contract <GradientText>Deployment</GradientText>
               </Typography>
             }
-            description="CSS utilities allow you to move faster and make for a smooth developer experience when styling any component."
+            description="facilitates rapid deployment of smart contracts, streamlining the process of launching new decentralized applications (dApps) and services."
           />
           <Group sx={{ m: -2, p: 2 }}>
             <Highlighter disableBorder {...getSelectedProps(0)} onClick={() => setIndex(0)}>
               <Item
                 icon={<StyleRoundedIcon color="primary" />}
-                title="Leverage the tokens from your theme"
-                description="Easily use the design tokens defined in your theme for any CSS property out there."
+                title="Token Contract"
+                description="A Token Contract enables the creation and management of digital tokens on the EpicChain blockchain."
               />
             </Highlighter>
             <Highlighter disableBorder {...getSelectedProps(1)} onClick={() => setIndex(1)}>
               <Item
                 icon={<SwitchAccessShortcutRoundedIcon color="primary" />}
-                title="No context switching"
-                description="The styling and component usage are both in the same place, right where you need them."
+                title="Voting Contract"
+                description="A Voting Contract is designed to facilitate decentralized voting and governance mechanisms on the EpicChain network."
               />
             </Highlighter>
             <Highlighter disableBorder {...getSelectedProps(2)} onClick={() => setIndex(2)}>
               <Item
                 icon={<DevicesOtherRoundedIcon color="primary" />}
-                title="Responsive styles right inside system prop"
-                description="An elegant API for writing CSS media queries that match your theme breakpoints."
+                title="Escrow Contract"
+                description="An Escrow Contract acts as a trusted intermediary in transactions, holding funds until predefined conditions are met."
               />
             </Highlighter>
           </Group>

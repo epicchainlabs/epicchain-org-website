@@ -22,14 +22,13 @@ export default function AboutEnd() {
       >
         <SectionHeadline
           alwaysCenter
-          overline="Join us"
           title={
             <Typography variant="h2">
-              <GradientText>Build the next generation</GradientText>
-              <br /> of tools for UI development
+              <GradientText>Building the Next Generation</GradientText>
+              <br /> Team at EpicChain
             </Typography>
           }
-          description="Together, we are enabling developers & designers to bring stunning UIs to life with unrivalled speed and ease."
+          description="At EpicChain, we understand that our success is driven by the talent and dedication of our team."
         />
         <Button
           component={Link}

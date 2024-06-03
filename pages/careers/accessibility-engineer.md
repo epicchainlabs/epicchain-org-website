@@ -1,109 +1,41 @@
-# Accessibility Engineer (future role)
+<p class="description">Blockchain Solutions Architect</p>
 
-<p class="description">You will become our go-to expert for accessibility, to ensure all products meet or exceed WCAG 2.1 level AA guidelines.</p>
+# Blockchain Solutions Architect
 
-## Details of the role
+## Overview
 
-- **Location**: Remote (preference for UTC-6 to UTC+5).
-- **Type of work**: Full-time (contractor or employee [depending on circumstances](https://mui-org.notion.site/Hiring-FAQ-64763b756ae44c37b47b081f98915501#494af1f358794028beb4b7697b5d3102)).
-- **Level**: [IC4 or above](https://mui-org.notion.site/Leveling-at-MUI-5c30f9bfe65149d697f346447cef9db1).
-- We're a **remote** company, we prefer asynchronous communication over meetings.
+Welcome to the role of Blockchain Solutions Architect at EpicChain Labs! As a Blockchain Solutions Architect, you will play a crucial role in designing and implementing cutting-edge blockchain solutions that meet the needs of our clients and partners. You will work closely with our development team to develop technical specifications and ensure the successful implementation of blockchain technology. This role requires a deep understanding of blockchain technologies, as well as strong problem-solving and communication skills.
 
-## The company
+## Responsibilities
 
-MUI's story began in 2014 with Material UI, the most successful React implementation of Google's Material Design.
-Today, Material UI stands as one of the most popular open-source libraries on GitHub and has paved the way for the fully-fledged startup known as MUI (founded in 2019), which now boasts an ever-expanding ecosystem of React UI products.
-We're a company of 31+ people as of late 2023, and we're growing.
+- **Designing Blockchain Solutions:** You will be responsible for designing blockchain solutions that meet the specific needs of our clients and partners. This includes identifying requirements, creating technical specifications, and developing a roadmap for implementation.
 
-## The products
+- **Implementing Blockchain Technology:** You will work closely with our development team to implement blockchain technology into existing systems. This may involve writing code, developing smart contracts, and integrating blockchain with other technologies.
 
-MUI is best known for our flagship product, Material UI—but this is just one of three core component libraries we maintain.
-Base UI is our headless component library, and Joy UI is a sister library to Material UI that implements our own in-house Joy Design system.
-We also host Design Kits and pre-built Templates.
+- **Researching New Technologies:** The blockchain industry is constantly evolving, and as a Blockchain Solutions Architect, you will be expected to stay up-to-date with the latest trends and technologies. You will conduct research to identify new opportunities for innovation and improvement.
 
-Beyond the core libraries, MUI X offers advanced components like the Data Grid, Date and Time Pickers, and Charts, for more complex user interactions and data visualization needs.
+- **Ensuring Security and Integrity:** Security is a top priority in blockchain technology. You will be responsible for ensuring the security and integrity of our blockchain solutions through rigorous testing and validation processes.
 
-We're also making ambitious moves to incorporate our full suite of components into Toolpad, a low-code admin builder tool for assembling full-stack apps faster than ever.
+- **Providing Technical Expertise:** As a Blockchain Solutions Architect, you will provide technical expertise and guidance to team members and stakeholders. This may include mentoring junior developers, conducting training sessions, and participating in technical discussions.
 
-Learn more about MUI's products in this blog post: [An introduction to the MUI ecosystem](https://mui.com/blog/mui-product-comparison/).
+## Requirements
 
-## The culture
+To be successful in this role, you will need:
 
-MUI is a fully remote company with a team that spans the globe.
-The majority of our work is asynchronous, and we rely on written communication to collaborate.
-We're radically transparent: nearly all of our work happens in public.
-Each contributor has the freedom to decide how and when they work, and that work is primarily self-directed: it's your responsibility to define and complete your own tasks in a timely manner.
+- **Education:** A Bachelor's degree in Computer Science or a related field.
+- **Experience:** Proven experience as a Blockchain Solutions Architect or similar role.
+- **Skills:** Proficiency in blockchain technologies such as Ethereum, Solidity, and Hyperledger. A strong understanding of cryptography and secure coding practices. Excellent problem-solving skills and attention to detail. The ability to work effectively in a team environment.
 
-For additional details about the culture, you can check our [careers](https://mui.com/careers/) and [about](https://mui.com/about/) pages and also our [public Handbook](https://mui-org.notion.site/Handbook-f086d47e10794d5e839aef9dc67f324b).
+## Benefits
 
-## Why we're hiring
+Working at EpicChain Labs comes with a range of benefits, including:
 
-Accessibility is a strategic opportunity for MUI, across our products:
+- **Competitive Salary:** We offer a competitive salary that reflects your skills, experience, and contributions to the team.
+- **Career Growth and Advancement:** We believe in investing in our employees' professional development. You will have opportunities for career growth and advancement as you take on new challenges and expand your skills.
+- **Flexible Work Hours:** We understand the importance of work-life balance. That's why we offer flexible work hours that allow you to work when you're most productive and accommodate your personal schedule.
+- **Remote Work Options:** We offer remote work options for certain positions, allowing you to work from anywhere in the world.
+- **Collaborative Work Environment:** You will work alongside a team of talented individuals who share your passion for blockchain technology, creating a supportive and inspiring work environment.
 
-1. We are building Base UI for the developers that are looking for a relatively lower-level API while keeping a strong baseline to build on top of that saves them time. For them, it's about having a better customizability experience (style & behavior). The most exigent users of Base UI, the ones that are spreading the viral growth of the product in the community, have strong a11y requirements. So we have to meet them for Base UI to be successful.
-2. Accessibility is mandated by law. For example, in the US, the Americans with Disabilities Act (ADA) is a US law enacted in 1990 to ensure people with disabilities are not discriminated against. In the EU, the European Accessibility Act (AEE) will soon be enacted. Our paid customers are increasingly asking about compliance with WCAG.
+## Why Join Us
 
-Overall, both our open-source community and our premium products are growing fast (x2 YoY).
-We need talented people to keep that going!
-
-### Why this is interesting
-
-Our products empower React developers to build awesome applications faster – we see millions of developers on MUI's docs every year, one million a month.
-
-So, by improving the accessibility of our components, you will help millions of end-users who use [the products built with our UI library](https://trends.builtwith.com/framework/Material-UI).
-You will also be responsible to train the developers using MUI's products to a11y. For example, there might be an opportunity to create an eslint plugin aware of Material UI APIs to catch a11y issues before they go to production.
-
-## The role
-
-### What you'll do on a day-to-day basis
-
-Depending on the day, you'll:
-
-- **Ensure the components are accessible.**
-  You will be the owner of the accessibility across all MUI products. First, you will be responsible to verify the level of accessibility the components comply with and then implementing improvements over time.
-- **Respond to issues related to accessibility.**
-  The users of our products create issues related to a11y. You will be responsible to unlock the community, either by providing best practices, guiding them to contribute a fix, or by directly fixing the issues reported.
-- **Intelligently apply accessibility testing tools**. You will use assistive technology and perform expert manual analysis of the MUI product lines.
-  Having a solid test framework that can help us make sure we stay compliant.
-- **Lead the accessibility training across the company.**
-  You will be the go-to person for anything related to accessibility. You will mentor other team members.
-
-## Who we're looking for
-
-### Required
-
-- **Strong grasp of accessibility techniques in web development** applying HTML5, CSS, ARIA, and JavaScript. You should have held a Front-end Engineer (or closely related) role in the past.
-- **A track record of accessibility experience with both consumer/enterprise products and assistive technologies, such as screen readers, eye control, and other accessibility technologies**.
-  If you've been the accessibility champ in a previous company, pushing towards making sure the user interfaces can be used by disabled people, we want you in our team!
-- **Hands-on knowledge of accessibility guidelines and standards** (such as Section 508, WCAG, and EN 301 549) as well as technologies (such as UI Automation, IAccessible, ARIA, and related accessibility APIs)
-  You would be the one who the team can go to with any a11y topics/questions.
-- **An advocate of continuous learning;** able to absorb and share new ideas, approaches, and techniques for achieving accessibility.
-  Continuous learning is one of the most important parts of this field.
-- **Experience with assistive technologies across multiple platforms**, including screen readers, magnification, and read-aloud tools.
-
-### Nice to have (but not required)
-
-- **Certification in accessibility**, such as Trusted Tester, CPACC (Certified Professional in Accessibility Core Competencies), WAS (Web Accessibility Specialist).
-  This would be a clear indication that you went deep into the accessibility topics.
-- **You've contributed to a design system before**.
-  You have worked on enterprise components in the past, maybe for internal use in your company.
-  You have built some features while making sure the accessibility was fully functional.
-
-## Benefits and compensation
-
-We offer competitive compensation depending on the profile and location.
-We're ready to pay top market rates for a person who can clearly exceed the role's expectations. Learn more about perks and benefits on the [careers](https://mui.com/careers/#perks-and-benefits) page.
-
-Competitive compensation depending on the profile and location.
-We are ready to pay top market rates for a person that can clearly exceed the role's expectations.
-You can find the other perks & benefits on the [careers](https://mui.com/careers/#perks-and-benefits) page.
-
-## How to apply
-
-[Apply now for this position 📮](https://jobs.ashbyhq.com/MUI/ebc6db2a-fda9-431e-b45a-692377ef74aa/application?utm_source=ZNRrPGBkqO)
-
-Don't meet every requirement?
-Apply anyway!
-Research shows that certain folks are less likely to apply for a role than others [unless they meet 100%](https://hbr.org/2014/08/why-women-dont-apply-for-jobs-unless-theyre-100-qualified) of the outlined qualifications.
-If this role excites you, we want to hear from you.
-We'd love for you to share the unique skills, passion, and experience you could bring to MUI.
+Joining EpicChain Labs means being part of a team that is shaping the future of blockchain technology. We are passionate about what we do and are committed to creating a positive impact in the world. If you are looking for a challenging and rewarding career as a Blockchain Solutions Architect, we would love to hear from you. Apply now to join our team at EpicChain Labs.

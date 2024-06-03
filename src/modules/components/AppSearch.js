@@ -421,27 +421,6 @@ export default function AppSearch(props) {
 
   return (
     <React.Fragment>
-      <SearchButton
-        ref={searchButtonRef}
-        onClick={onOpen}
-        aria-labelledby="app-search-label"
-        {...props}
-      >
-        <SearchIcon
-          fontSize="small"
-          sx={(theme) => ({
-            color: 'primary.500',
-            ...theme.applyDarkStyles({
-              color: 'primary.300',
-            }),
-          })}
-        />
-        <SearchLabel id="app-search-label">{t('searchButton')}</SearchLabel>
-        <Shortcut aria-hidden="true">
-          {/* eslint-disable-next-line material-ui/no-hardcoded-labels */}
-          {macOS ? '⌘' : 'Ctrl+'}K
-        </Shortcut>
-      </SearchButton>
       {isOpen &&
         ReactDOM.createPortal(
           <DocSearchModal

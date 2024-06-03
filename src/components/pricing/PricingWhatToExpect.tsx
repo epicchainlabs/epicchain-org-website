@@ -17,11 +17,10 @@ export default function PricingWhatToExpect() {
   return (
     <Section cozy>
       <SectionHeadline
-        overline="Paid plans"
         title={
           <Typography variant="h2" sx={{ mt: 1, mb: 4 }}>
-            Key information about
-            <br /> <GradientText>the paid plans</GradientText>
+            Key Information About
+            <br /> <GradientText>EpicChain</GradientText>
           </Typography>
         }
       />
@@ -39,129 +38,66 @@ export default function PricingWhatToExpect() {
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             <FunctionsIcon fontSize="small" color="primary" />
             <Typography fontWeight="bold" component="h3" color="text.primary" variant="body2">
-              Required quantity
+            Features and Benefits
             </Typography>
           </Box>
           <Typography variant="body2" color="text.secondary">
-            The number of developers licensed must correspond to the maximum number of concurrent
-            developers contributing changes to the front-end code of the projects that use the
-            software.
-            <br />
-            <br />
-            You can learn more about this in{' '}
-            <Link
-              target="_blank"
-              rel="noopener"
-              href="https://mui.com/legal/mui-x-eula/#required-quantity-of-licenses"
-            >
-              the EULA
-            </Link>
-            .
+          EpicChain's paid plans offer a range of features and benefits, including access to advanced security features, priority customer support, and additional storage and bandwidth options.
           </Typography>
         </Paper>
         <Paper variant="outlined" sx={{ p: 2, height: 'fit-content' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             <AcUnitIcon fontSize="small" color="primary" />
             <Typography fontWeight="bold" component="h3" color="text.primary" variant="body2">
-              Perpetual license model
+            Security
             </Typography>
           </Box>
           <Typography variant="body2" color="text.secondary" component="div">
-            The Perpetual license model offers the right to keep using your licensed versions
-            forever in production and development. It comes with 12 months of maintenance (free
-            updates & support).
-            <br />
-            <br />
-            Upon expiration, you can renew your maintenance plan with a discount that depends on
-            when you renew:
-            <ul>
-              <li>before the support expires: 50% discount</li>
-              <li>up to 60 days after the support has expired: 35% discount</li>
-              <li>more than 60 days after the support has expired: 15% discount</li>
-            </ul>
+          Paid plans include enhanced security measures such as two-factor authentication, encryption, and regular security audits to protect your assets and transactions.
           </Typography>
         </Paper>
         <Paper variant="outlined" sx={{ p: 2, height: 'fit-content' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             <AllInclusiveOutlinedIcon fontSize="small" color="primary" />
             <Typography fontWeight="bold" component="h3" color="text.primary" variant="body2">
-              Perpetual vs. Annual license model
+            Support
             </Typography>
           </Box>
           <Typography variant="body2" color="text.secondary">
-            On both license models, any version released before the end of your license term is
-            forever available for applications deployed in production.
-            <br />
-            <br />
-            The difference regards the right to use the components for <strong>
-              development
-            </strong>{' '}
-            purposes. Only the perpetual license model allows you to continue development once your
-            license expires.
+          Paid plans provide priority customer support to ensure that your questions and issues are addressed promptly and effectively.
           </Typography>
         </Paper>
         <Paper variant="outlined" sx={{ p: 2, height: 'fit-content' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             <ReplayRoundedIcon fontSize="small" color="primary" />
             <Typography fontWeight="bold" component="h3" color="text.primary" variant="body2">
-              Annual license model
+            Storage and Bandwidth
             </Typography>
           </Box>
           <Typography variant="body2" color="text.secondary">
-            The Annual license model requires an active license to use the software in development.
-            You will need to renew your license if you wish to continue active development after
-            your current license term expires.
-            <br />
-            <br />
-            The license is perpetual in production so you {"don't"} need to renew your license if
-            you have stopped active development with the commercial components.
-            <br />
-            <br />
-            You can learn more about this in{' '}
-            <Link
-              target="_blank"
-              rel="noopener"
-              href="https://mui.com/legal/mui-x-eula/#annual-license"
-            >
-              the EULA
-            </Link>
-            .
+          Paid plans offer increased storage and bandwidth options, allowing you to store more data and handle higher volumes of transactions.
           </Typography>
         </Paper>
         <Paper variant="outlined" sx={{ p: 2, height: 'fit-content' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             <HelpOutlineOutlinedIcon fontSize="small" color="primary" />
             <Typography fontWeight="bold" component="h3" color="text.primary" variant="body2">
-              Maintenance and support
+            Cost
             </Typography>
           </Box>
           <Typography variant="body2" color="text.secondary">
-            With your purchase, you receive support and access to new versions for the duration of
-            your subscription. You can{' '}
-            <Link href="https://mui.com/x/introduction/support/#technical-support">
-              learn more about support
-            </Link>{' '}
-            in the docs.
-            <br />
-            <br />
-            Note that, except for critical issues, such as security flaws, we release bug fixes and
-            other improvements on top of the latest version, instead of patching older versions.
+          The cost of EpicChain's paid plans varies depending on the level of service and features included. Pricing is transparent and competitive, with options available for businesses of all sizes.
           </Typography>
         </Paper>
         <Paper variant="outlined" sx={{ p: 2, height: 'fit-content' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
             <LocalOfferOutlinedIcon fontSize="small" color="primary" />
             <Typography fontWeight="bold" component="h3" color="text.primary" variant="body2">
-              Volume discounts
+            Flexibility
             </Typography>
           </Box>
           <Typography variant="body2" color="text.secondary">
-            The Pro plan is capped at 10 developers licensed; you do not need to pay for additional
-            licenses for more than 10 developers.
-            <br />
-            <br />
-            You can contact <Link href="mailto:sales@mui.com">sales</Link> for a volume discount
-            when licensing over 25 developers under the Premium plan.
+          Paid plans are flexible, allowing you to upgrade or downgrade your plan as your needs change. This flexibility ensures that you always have the right level of service for your business.
           </Typography>
         </Paper>
       </Box>

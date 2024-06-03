@@ -216,7 +216,7 @@ export default function HeaderNavBar() {
             onClick={handleClickMenu('products')}
             aria-controls={subMenuOpen === 'products' ? 'products-popper' : undefined}
           >
-            Cutting-Edge Features
+            Features
           </ButtonBase>
           <Popper
             id="products-popper"
@@ -312,68 +312,20 @@ export default function HeaderNavBar() {
             )}
           </Popper>
         </li>
-        <li
-          onMouseEnter={setSubMenuOpenUndebounce('docs')}
-          onFocus={setSubMenuOpenUndebounce('docs')}
-          onMouseLeave={() => setSubMenuOpenDebounced(null)}
-          onBlur={setSubMenuOpenUndebounce(null)}
-        >
-          <ButtonBase
-            ref={docsMenuRef}
-            aria-haspopup
-            aria-expanded={subMenuOpen === 'docs' ? 'true' : 'false'}
-            onClick={handleClickMenu('docs')}
-            aria-controls={subMenuOpen === 'docs' ? 'docs-popper' : undefined}
-          >
-            Docs
-          </ButtonBase>
-          <Popper
-            id="docs-popper"
-            open={subMenuOpen === 'docs'}
-            anchorEl={docsMenuRef.current}
-            transition
-            placement="bottom-start"
-            style={{ zIndex: 1200, pointerEvents: subMenuOpen === 'docs' ? undefined : 'none' }}
-          >
-            {({ TransitionProps }) => (
-              <Fade {...TransitionProps} timeout={250}>
-                <Paper
-                  variant="outlined"
-                  sx={(theme) => ({
-                    mt: 1,
-                    minWidth: 498,
-                    overflow: 'hidden',
-                    borderColor: 'grey.200',
-                    bgcolor: 'background.paper',
-                    boxShadow: `0px 4px 16px ${alpha(theme.palette.grey[200], 0.8)}`,
-                    '& ul': {
-                      margin: 0,
-                      padding: 0,
-                      listStyle: 'none',
-                    },
-                    ...theme.applyDarkStyles({
-                      borderColor: 'primaryDark.700',
-                      bgcolor: 'primaryDark.900',
-                      boxShadow: `0px 4px 16px ${alpha(theme.palette.common.black, 0.8)}`,
-                    }),
-                  })}
-                >
-                  <ul>
-                    <MuiProductSelector />
-                  </ul>
-                </Paper>
-              </Fade>
-            )}
-          </Popper>
+        <li>
+          <Link href={ROUTES.pricing}>Labs</Link>
         </li>
         <li>
-          <Link href={ROUTES.pricing}>Pricing</Link>
+          <Link href={ROUTES.materialDocs}>Docs</Link>
         </li>
         <li>
           <Link href={ROUTES.about}>About us</Link>
         </li>
         <li>
           <Link href={ROUTES.blog}>Blog</Link>
+        </li>
+        <li>
+          <Link href={ROUTES.careers}>Careers</Link>
         </li>
       </ul>
     </Navigation>

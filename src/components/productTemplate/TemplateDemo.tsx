@@ -61,36 +61,13 @@ export default function TemplateDemo() {
       <Grid container spacing={2} alignItems="center">
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Templates"
             title={
               <Typography variant="h2">
-                The right template for your <GradientText>specific use case</GradientText>
+                Decision-Making <GradientText>Process</GradientText>
               </Typography>
             }
-            description="The Material UI collection of templates offers an expanding list of use cases designed to support projects of various types."
+            description="The decision-making process details the steps for proposal submission, review, voting, and implementation."
           />
-          <Group desktopColumns={2} sx={{ m: -2, p: 2 }}>
-            {DEMOS.map((name) => (
-              <Highlighter
-                key={name}
-                selected={name === demo}
-                onClick={() => {
-                  setDemo(name);
-                  setTemplateIndex(0);
-                }}
-              >
-                <Item
-                  icon={React.cloneElement(icons[name], name === demo ? { color: 'primary' } : {})}
-                  title={name}
-                />
-              </Highlighter>
-            ))}
-            <More
-              component={Link}
-              href="https://mui.com/store/?utm_source=marketing&utm_medium=referral&utm_campaign=templates-cta2#populars"
-              noLinkStyle
-            />
-          </Group>
         </Grid>
         <Grid xs={12} md={6}>
           <Frame>
@@ -140,32 +117,6 @@ export default function TemplateDemo() {
                         }),
                       })}
                     >
-                      <Link
-                        href={`${item.href}?utm_source=marketing&utm_medium=referral&utm_campaign=templates-cta2`}
-                        noLinkStyle
-                        target="_blank"
-                        sx={{
-                          transition: '0.3s',
-                          borderRadius: 1,
-                          position: 'absolute',
-                          width: '100%',
-                          height: '100%',
-                          opacity: 0,
-                          top: 0,
-                          left: 0,
-                          bgcolor: (theme) => alpha(theme.palette.primaryDark[900], 0.4),
-                          color: '#fff',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          '&:hover, &:focus': {
-                            opacity: 1,
-                          },
-                        }}
-                      >
-                        <Typography fontWeight="bold">Go to store</Typography>
-                        <LaunchRounded fontSize="small" sx={{ ml: 1 }} />
-                      </Link>
                     </Box>
                   ))}
                 </SwipeableViews>
@@ -207,7 +158,6 @@ export default function TemplateDemo() {
                   {templates[templateIndex].name}
                 </Typography>
                 <Typography variant="body2" color="grey.500" noWrap sx={{ fontSize: '0.75rem' }}>
-                  Developed by {templates[templateIndex].author}
                 </Typography>
               </div>
               <Typography color="grey.500" variant="caption">

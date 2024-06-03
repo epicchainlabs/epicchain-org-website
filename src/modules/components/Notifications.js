@@ -122,27 +122,7 @@ export default function Notifications() {
 
       if (active) {
         // Permanent notifications
-        const filteredNotifications = [
-          /* {
-            id: 0,
-            title: "Let's translate!",
-            text: '<a style="color: inherit;" target="_blank" rel="noopener" data-ga-event-category="l10n" data-ga-event-action="notification" data-ga-event-label="zh" href="https://crowdin.com/project/material-ui-docs">帮助 MUI 将文档翻译成中文</a>. 🇨🇳',
-            userLanguage: 'zh',
-          }, */
-          {
-            id: 1,
-            text: 'You can <a style="color: inherit;" target="_blank" rel="noopener" href="https://twitter.com/MUI_hq">follow us on X</a> or subscribe on <a style="color: inherit;" target="_blank" rel="noopener" href="/blog/">our blog</a> to receive exclusive tips and updates about MUI and the React ecosystem.',
-          },
-          // Only 3
-          ...notifications.splice(-3),
-        ];
-
-        const seen = getCookie('lastSeenNotification');
-        const lastSeenNotification = seen === undefined ? 0 : parseInt(seen, 10);
-        setNotifications({
-          messages: filteredNotifications,
-          lastSeen: lastSeenNotification,
-        });
+        
       }
     }, 1500);
 
@@ -154,49 +134,6 @@ export default function Notifications() {
 
   return (
     <React.Fragment>
-      <Tooltip
-        open={tooltipOpen}
-        title={t('toggleNotifications')}
-        enterDelay={300}
-        onOpen={() => {
-          setTooltipOpen(!open);
-        }}
-        onClose={() => {
-          setTooltipOpen(false);
-        }}
-      >
-        <IconButton
-          color="primary"
-          ref={anchorRef}
-          aria-controls={open ? 'notifications-popup' : undefined}
-          aria-haspopup="true"
-          aria-label={`${
-            messageList
-              ? messageList.reduce(
-                  (count, message) => (message.id > lastSeen ? count + 1 : count),
-                  0,
-                )
-              : 0
-          } ${t('unreadNotifications')}`}
-          data-ga-event-category="AppBar"
-          data-ga-event-action="toggleNotifications"
-          onClick={handleToggle}
-        >
-          <Badge
-            color="error"
-            badgeContent={
-              messageList
-                ? messageList.reduce(
-                    (count, message) => (message.id > lastSeen ? count + 1 : count),
-                    0,
-                  )
-                : 0
-            }
-          >
-            <NotificationsNoneRoundedIcon fontSize="small" />
-          </Badge>
-        </IconButton>
-      </Tooltip>
       <Popper
         id="notifications-popup"
         anchorEl={anchorRef.current}

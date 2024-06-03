@@ -60,8 +60,8 @@ export default function HowToSupport() {
         overline="Support us"
         title={
           <Typography variant="h2" sx={{ mb: 4 }}>
-            Learn how to support
-            <br /> <GradientText>MUI&apos;s growth</GradientText>
+            Learn How to Support 
+            <br /> <GradientText>EpicChain</GradientText>
           </Typography>
         }
         description=""
@@ -70,113 +70,31 @@ export default function HowToSupport() {
         <Grid xs={12} sm={6} md={4}>
           <Widget
             icon={<ForumRoundedIcon fontSize="small" color="primary" />}
-            title="Give feedback"
+            title="Engage with Our Community"
           >
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              Tell us what and where we can improve or share your happy moments with us! You can
-              also up or downvote any page on our documentation. <br />
-              <br /> And lastly, from time to time, we send our community a survey for more
-              structured feedback, you&apos;re always invited to participate to share your thoughts.
+            Join our vibrant community of blockchain enthusiasts, developers, and supporters by participating in our forums, social media channels, and events. Share your insights, ask questions, and collaborate with like-minded individuals. Your active engagement helps us grow and fosters a stronger, more connected ecosystem.
             </Typography>
-            <Button
-              component="a"
-              size="small"
-              variant="outlined"
-              fullWidth
-              href="https://github.com/mui/material-ui/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc"
-              endIcon={<KeyboardArrowRightRounded />}
-              sx={{ mt: 'auto' }}
-            >
-              Leave your feedback{' '}
-            </Button>
           </Widget>
         </Grid>
         <Grid xs={12} sm={6} md={4}>
           <Widget
             icon={<PeopleRoundedIcon fontSize="small" color="primary" />}
-            title="Join the community"
+            title="Contribute to Development"
           >
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              Become a member of a huge community of developers supporting MUI. You can:
+            Whether you're a seasoned developer or just starting, there are numerous ways to contribute to EpicChain's development. Explore our open-source projects on GitHub, submit pull requests, report issues, or propose new features. By contributing your skills and expertise, you play a vital role in enhancing the platform and driving innovation.
             </Typography>
-            <Box
-              component="ul"
-              sx={{
-                typography: 'body2',
-                color: 'text.secondary',
-                pl: 2,
-                mb: 2,
-              }}
-            >
-              <li>
-                Add new features by{' '}
-                <Link href="https://github.com/mui/material-ui/blob/HEAD/CONTRIBUTING.md#your-first-pull-request">
-                  submitting a pull request
-                </Link>
-                .
-              </li>
-              <li>
-                Fix bugs or{' '}
-                <Link href="https://github.com/mui/material-ui/tree/HEAD/docs">
-                  improve our documentation
-                </Link>
-                .
-              </li>
-              <li>
-                Help others by reviewing and commenting on existing{' '}
-                <Link href="https://github.com/mui/material-ui/pulls">PRs</Link> and{' '}
-                <Link href="https://github.com/mui/material-ui/issues">issues</Link>.
-              </li>
-              <li>
-                Help <Link href="https://crowdin.com/project/material-ui-docs">translate</Link> the
-                documentation.
-              </li>
-              <li>
-                Answer questions on{' '}
-                <Link href="https://stackoverflow.com/questions/tagged/material-ui">
-                  Stack&nbsp;Overflow
-                </Link>
-                .
-              </li>
-            </Box>
-            <Button
-              component="a"
-              size="small"
-              variant="outlined"
-              fullWidth
-              href="https://github.com/mui/material-ui"
-              endIcon={<KeyboardArrowRightRounded />}
-              sx={{ mt: 'auto' }}
-            >
-              See the repository
-            </Button>
           </Widget>
         </Grid>
         <Grid xs={12} sm={6} md={4}>
           <Widget
             icon={<LocalAtmRoundedIcon fontSize="small" color="primary" />}
-            title="Support us financially"
+            title="Spread the Word"
           >
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              If you use MUI in a commercial project and would like to support its continued
-              development by becoming a Sponsor, or in a side or hobby project and would like to
-              become a Backer, you can do so through {'Open Collective'}.
-              <br />
-              <br />
-              All funds donated are managed transparently, and Sponsors receive recognition in the
-              README and on the MUI home page.
+            Help us expand our reach by spreading the word about EpicChain. Share our mission, updates, and achievements with your network. Write blog posts, create videos, or host meetups to introduce others to the potential of EpicChain. Your advocacy and support are crucial in building awareness and attracting new users, partners, and investors to our ecosystem.
             </Typography>
-            <Button
-              component="a"
-              size="small"
-              variant="outlined"
-              fullWidth
-              href="https://opencollective.com/mui-org"
-              endIcon={<KeyboardArrowRightRounded />}
-              sx={{ mt: 'auto' }}
-            >
-              {'See Open Collective'}
-            </Button>
           </Widget>
         </Grid>
       </Grid>

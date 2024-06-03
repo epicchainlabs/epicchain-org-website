@@ -52,14 +52,6 @@ export default function BaseUIHero() {
               }),
             })}
           >
-            <IconImage width={28} height={28} loading="eager" name="product-core" />{' '}
-            <Link href={ROUTES.productCore}>MUI Core</Link>{' '}
-            <Typography component="span" variant="inherit" sx={{ color: 'divider' }}>
-              /
-            </Typography>
-            <Typography component="span" variant="inherit" sx={{ color: 'text.primary' }}>
-              Base UI
-            </Typography>
           </Typography>
 
           <Typography
@@ -72,19 +64,15 @@ export default function BaseUIHero() {
               zIndex: 1,
             }}
           >
-            A <GradientText>blank canvas</GradientText> for <br />
-            total flexibility
+            EpicChain <GradientText>Decentralized </GradientText> Governance <br />
+            Framework
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3, maxWidth: 500 }}>
-            Base UI gives you a set of foundational &quot;headless&quot; components that you can
-            build with using any styling solution you choose—no need to override any default style
-            engine or theme.
+          EpicChain's Decentralized Governance Framework empowers the community to participate in the decision-making processes of the ecosystem.
           </Typography>
           <GetStartedButtons
             primaryUrl={ROUTES.baseDocs}
-            secondaryLabel="Learn Base UI"
             secondaryUrl={ROUTES.baseQuickstart}
-            altInstallation="npm install @mui/base"
           />
         </Box>
       }

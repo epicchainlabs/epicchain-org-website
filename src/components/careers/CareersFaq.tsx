@@ -60,18 +60,18 @@ const AccordionDetails = styled(MuiAccordionDetail)(({ theme }) => ({
 
 const faqData = [
   {
-    summary: 'Are there application deadlines?',
-    detail: 'No. You can still apply if a position is visible on our careers page.',
+    summary: 'What kind of career opportunities are available at EpicChain Labs?',
+    detail: 'At EpicChain Labs, we offer a wide range of career opportunities across various departments, including software development, blockchain engineering, marketing, business development, and more.',
   },
   {
-    summary: 'Does MUI do whiteboarding during interviews?',
+    summary: 'What qualifications do I need to work at EpicChain Labs?',
     detail:
-      'No. We ask applicants to complete challenges that are close to their future day-to-day contributions.',
+      'Qualifications vary depending on the position, but generally, we look for candidates with relevant educational backgrounds and experience in their field.',
   },
   {
-    summary: 'Does MUI offer contract job opportunities?',
+    summary: 'How can I apply for a job at EpicChain Labs?',
     detail:
-      'Yes. People outside of France can be hired as full-time contractors. (Benefits may vary.)',
+      'To apply for a job at EpicChain Labs, please visit our careers page on our website and browse the available positions.',
   },
 ];
 
@@ -113,30 +113,6 @@ export default function CareersFaq() {
         </Grid>
         <Grid xs={12} md={6}>
           {renderFAQItem(2)}
-          <Paper
-            variant="outlined"
-            sx={(theme) => ({
-              p: 2,
-              borderStyle: 'dashed',
-              borderColor: 'divider',
-              bgcolor: 'white',
-              ...theme.applyDarkStyles({
-                bgcolor: 'primaryDark.800',
-              }),
-            })}
-          >
-            <Box sx={{ textAlign: 'left' }}>
-              <Typography variant="body2" color="text.primary" fontWeight="bold">
-                Got any questions unanswered or need more help?
-              </Typography>
-            </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ my: 1, textAlign: 'left' }}>
-              We&apos;re here to help you with any other question you have about our hiring process.
-            </Typography>
-            <Link href="mailto:job@mui.com" variant="body2">
-              Contact us <KeyboardArrowRightRounded fontSize="small" />
-            </Link>
-          </Paper>
         </Grid>
       </Grid>
     </Section>

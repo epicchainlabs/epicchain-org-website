@@ -55,11 +55,10 @@ export default function BaseUIEnd() {
               <GlowingIconContainer icon={<CompareIcon color="primary" />} />
               <div>
                 <Typography color="text.primary" fontWeight="semiBold" gutterBottom>
-                  Base UI vs. Material UI
+                EpicChain Global Community Forum
                 </Typography>
                 <Typography>
-                  Base UI features many of the same components as Material UI, but without the
-                  Material Design implementation.
+                The EpicChain Global Community Forum is a platform where EpicChain enthusiasts and stakeholders from around the world come together to discuss and participate in the governance of the ecosystem.
                 </Typography>
               </div>
             </ListItem>
@@ -67,12 +66,10 @@ export default function BaseUIEnd() {
               <GlowingIconContainer icon={<StyleRoundedIcon color="primary" />} />
               <div>
                 <Typography color="text.primary" fontWeight="semiBold" gutterBottom>
-                  Does it come with styles?
+                EpicChain Global Governance Council
                 </Typography>
                 <Typography>
-                  Base UI <i>is not packaged</i> with any default theme or built-in style engine.
-                  This makes it a great choice if you need complete control over how your app&apos;s
-                  CSS is implemented.
+                The EpicChain Global Governance Council is a representative body elected by the EpicChain community to oversee and facilitate governance processes.
                 </Typography>
               </div>
             </ListItem>

@@ -237,30 +237,19 @@ export default function MaterialHero() {
               }),
             })}
           >
-            <IconImage loading="eager" width={28} height={28} name="product-core" />{' '}
-            <Link href={ROUTES.productCore}>MUI Core</Link>{' '}
-            <Typography component="span" variant="inherit" sx={{ color: 'divider' }}>
-              /
-            </Typography>
-            <Typography component="span" variant="inherit" sx={{ color: 'text.primary' }}>
-              Material UI
-            </Typography>
           </Typography>
           <Typography variant="h1" sx={{ my: 2, maxWidth: 500 }}>
-            Ready to use <br />
-            <GradientText>Material Design</GradientText>
+          EpicChain <br />
+            <GradientText>Next-Generation </GradientText>
             <br />
-            components
+            Smart Contract
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3, maxWidth: 500 }}>
-            Material UI is an open-source React component library that implements Google&apos;s
-            Material Design. It&apos;s comprehensive and can be used in production out of the box.
+          The EpicChain Next-Generation Smart Contract is a revolutionary innovation in the blockchain landscape, designed to enhance the capabilities and security of decentralized applications.
           </Typography>
           <GetStartedButtons
             primaryUrl={ROUTES.materialDocs}
-            secondaryLabel="View templates"
             secondaryUrl={ROUTES.freeTemplates}
-            altInstallation="npm install @mui/material @emotion/react @emotion/styled"
           />
         </Box>
       }

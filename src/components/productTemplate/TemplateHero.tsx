@@ -32,24 +32,22 @@ export default function TemplateHero() {
               }),
             })}
           >
-            <IconImage width={28} height={28} loading="eager" name="product-templates" /> Templates
           </Typography>
           <Typography variant="h1" sx={{ my: 2, maxWidth: 500 }}>
-            <GradientText>Beautiful and fully built</GradientText> Material&nbsp;UI templates
+            <GradientText>Recognizing the need for a robust</GradientText> transparent, and inclusive governance structure
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3, maxWidth: 500 }}>
-            A collection of 4.5 average rating templates, selected and curated by Material UI&apos;s
-            maintainers to get your projects up and running today.
+          Ensure that all stakeholders, including developers, users, investors, and community members, have an opportunity to participate in governance.
           </Typography>
           <Button
             component={Link}
             noLinkStyle
-            href="https://mui.com/store/?utm_source=marketing&utm_medium=referral&utm_campaign=templates-cta#populars"
+            href="governance-model"
             variant="contained"
             endIcon={<KeyboardArrowRightRounded />}
             sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
-            Browse templates
+            Governance Model
           </Button>
         </Box>
       }

@@ -45,27 +45,26 @@ export default function MaterialDesignKits({ gradient }: MaterialDesignKitsProps
       <Grid container spacing={2} alignItems="center">
         <Grid md={6} sx={{ minWidth: 0 }}>
           <SectionHeadline
-            overline="Design resources"
             title={
               <Typography variant="h2">
-                Enhance your <GradientText>design workflow</GradientText>
+                EpicChain's Scalable <GradientText>Network Solution</GradientText>
               </Typography>
             }
-            description="Reach out for the Figma Design Kit and the Sync plugin to bridge the gap between development and design when using Material UI."
+            description="Quantum Guard Nexus is EpicChain's innovative solution for building a scalable network that can handle the demands of blockchain technology."
           />
           <Group sx={{ m: -2, p: 2 }}>
             <Highlighter disableBorder selected={customized} onClick={() => setCustomized(true)}>
               <Item
                 icon={<DrawRoundedIcon color="primary" />}
-                title="Design Kit"
-                description="Get many Material UI components with states, variations, colors, typography, and icons on your preferred design tool."
+                title="Quantum Ledger"
+                description="Quantum Ledger is EpicChain's innovative approach to building a scalable blockchain network that can handle the growing demands of decentralized applications (dApps) and smart contracts."
               />
             </Highlighter>
             <Highlighter disableBorder selected={!customized} onClick={() => setCustomized(false)}>
               <Item
                 icon={<ExtensionRoundedIcon color="primary" />}
-                title="Sync plugin"
-                description="Quickly generate a Material UI theme file with token and component customizations done on Figma."
+                title="Quantum Mesh Network"
+                description="EpicChain's Quantum Mesh Network is a revolutionary communication infrastructure designed to be decentralized, scalable, and highly resilient."
               />
             </Highlighter>
           </Group>

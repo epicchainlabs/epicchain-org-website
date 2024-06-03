@@ -20,27 +20,26 @@ import AppHeaderBanner from 'docs/src/components/banner/AppHeaderBanner';
 
 const openRolesData = [
   {
-    title: 'Engineering',
+    title: 'Blockchain Developer',
     roles: [
       {
-        title: 'React Engineer — X',
+        title: 'Blockchain Developer at EpicChain Labs',
         description:
-          'You will strengthen the MUI X product, build ambitious and complex new features, work on strategic problems, and help grow adoption.',
+          'As a Blockchain Developer at EpicChain Labs, you will be responsible for designing, implementing, and maintaining blockchain-based solutions. You will work closely with our team of experts to develop innovative applications using technologies like Quantum Guard Nexus, Quantum Vault Asset, and Smart Contracts.',
         url: '/careers/react-engineer-x/',
       },
     ],
   },
   {
-    title: 'Design',
     roles: [],
   },
   {
-    title: 'Developer Experience',
+    title: 'Marketing Specialist',
     roles: [
       {
-        title: 'Developer Advocate / Content Engineer',
+        title: 'Marketing Specialist at EpicChain Labs',
         description:
-          'You will strategize and implement educational initiatives from end to end to help developers build better UIs, faster.',
+          'As a Marketing Specialist at EpicChain Labs, you will be responsible for developing and implementing marketing strategies to promote our products and services.',
         url: '/careers/developer-advocate/',
       },
     ],
@@ -49,57 +48,36 @@ const openRolesData = [
 
 const nextRolesData = [
   {
-    title: 'Engineering',
     roles: [
       {
-        title: 'Accessibility Engineer',
+        title: 'Blockchain Solutions Architect',
         description:
-          'You will become our go-to expert for accessibility, to ensure all products meet or exceed WCAG 2.1 level AA guidelines.',
+          'As a Blockchain Solutions Architect at EpicChain Labs, you will be responsible for designing and implementing blockchain solutions that meet the needs of our clients and partners.',
         url: '/careers/accessibility-engineer/',
       },
       {
-        title: 'Full-stack Engineer — Toolpad',
+        title: 'Blockchain Security Engineer',
         description:
-          'You will join the Toolpad team, to explore the role of MUI in the low code space and help bring the early prototype to a usable product.',
+          'As a Blockchain Security Engineer at EpicChain Labs, you will be responsible for ensuring the security and integrity of our blockchain solutions.',
         url: '/careers/fullstack-engineer/',
       },
       {
-        title: 'React Engineer — xCharts',
+        title: 'Blockchain Data Analyst',
         description:
-          'You will help form the xCharts team, build ambitious and complex new features, work on strategic problems, and help grow adoption.',
+          'As a Blockchain Data Analyst at EpicChain Labs, you will be responsible for analyzing blockchain data to extract valuable insights and inform business decisions.',
         url: '/careers/react-engineer-x-charts/',
       },
       {
-        title: 'React Tech Lead — Core',
+        title: 'Blockchain Project Manager',
         description:
-          'You will lead the development of MUI Core, positioning the library as the industry standard for design teams while doubling its adoption.',
+          'As a Blockchain Project Manager at EpicChain Labs, you will be responsible for overseeing the planning, execution, and completion of blockchain projects.',
         url: '/careers/react-tech-lead-core/',
       },
       {
-        title: 'React Community Engineer — X',
+        title: 'Blockchain Business Development Manager',
         description:
-          'You will provide guidance to the community and solve their struggle, working primarily in the advanced components team.',
+          'As a Blockchain Business Development Manager at EpicChain Labs, you will be responsible for identifying new business opportunities and partnerships in the blockchain industry.',
         url: '/careers/react-community-engineer/',
-      },
-    ],
-  },
-  {
-    title: 'People',
-    roles: [
-      {
-        title: 'Technical Recruiter',
-        description: 'You will hire the next engineers, among other roles, joining the team.',
-        url: '/careers/technical-recruiter/',
-      },
-    ],
-  },
-  {
-    title: 'Sales',
-    roles: [
-      {
-        title: 'Account Executive',
-        description:
-          'You will build client relationships and manage the sales process from start to finish.',
       },
     ],
   },
@@ -123,14 +101,13 @@ export default function Careers() {
         <Section cozy bg="gradient">
           <SectionHeadline
             alwaysCenter
-            overline="Join us"
             title={
               <Typography variant="h2" component="h1">
-                Build <GradientText>the next generation</GradientText>
-                <br /> of tools for UI development
+                Shape the <GradientText>Future of</GradientText>
+                <br /> Blockchain Technology
               </Typography>
             }
-            description="Together, we are enabling developers & designers to bring stunning UIs to life with unrivalled speed and ease."
+            description="At EpicChain Labs, we're pioneering the future of blockchain technology. Join our team of innovators and visionaries as we revolutionize the industry with groundbreaking solutions like Quantum Guard Nexus, Quantum Vault Asset, and Smart Contracts."
           />
         </Section>
         <Divider />
@@ -143,7 +120,7 @@ export default function Careers() {
           <SectionHeadline
             title={
               <Typography variant="h2" id="open-roles" gutterBottom>
-                Open roles
+                Blockchain Developer at EpicChain Labs
                 <Badge
                   badgeContent={openRolesData.reduce((acc, item) => acc + item.roles.length, 0)}
                   color="success"
@@ -152,7 +129,7 @@ export default function Careers() {
                 />
               </Typography>
             }
-            description="The company was incorporated in mid-2019 and has been bootstrapped so far. We're growing fast—2× YoY—and have kept a steady pace of increasing the team: in 2020, we were 6; 15 in 2021, 25 in 2022, and 32 in 2023. We plan to grow the team to 60 people in 2024 in the following areas:"
+            description="Experts to develop innovative applications using technologies like Quantum Guard Nexus, Quantum Vault Asset, and Smart Contracts."
           />
           <Divider sx={{ borderStyle: 'dashed', my: { xs: 2, sm: 6 } }} />
           <Stack spacing={2} divider={<Divider />}>
@@ -186,16 +163,12 @@ export default function Careers() {
                 alwaysCenter
                 title={
                   <Typography variant="h2" id="next-roles" gutterBottom>
-                    Next roles
+                    Blockchain Integration Specialist
                   </Typography>
                 }
                 description={
                   <React.Fragment>
-                    If none of the roles below fit with what you are looking for, apply to{' '}
-                    <Link href="https://jobs.ashbyhq.com/MUI/4715d81f-d00f-42d4-a0d0-221f40f73e19/application?utm_source=ZNRrPGBkqO">
-                      the Dream job role
-                    </Link>
-                    !
+                    As a Blockchain Integration Specialist at EpicChain Labs, you will be responsible for integrating blockchain technology into existing systems and applications.
                   </React.Fragment>
                 }
               />

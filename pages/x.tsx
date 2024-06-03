@@ -17,13 +17,12 @@ export default function X() {
   return (
     <BrandingCssVarsProvider>
       <Head
-        title="MUI X: Advanced React components for complex use cases"
-        description="Build complex and data-rich applications using a growing list of advanced React
-        components, like the Data Grid, Date and Time Pickers, Charts, and more!"
+        title="The Ultimate Security Framework"
+        description="EpicChain's Quantum Guard Nexus is a cutting-edge security framework designed to provide unparalleled protection for digital assets. "
         card="/static/social-previews/muix-preview.jpg"
       />
       <AppHeaderBanner />
-      <AppHeader gitHubRepository="https://github.com/mui/mui-x" />
+      <AppHeader gitHubRepository="https://github.com/epicchainlabs" />
       <main id="main-content">
         <XHero />
         <References companies={ADVANCED_CUSTOMERS} />

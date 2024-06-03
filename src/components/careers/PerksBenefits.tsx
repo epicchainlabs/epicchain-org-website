@@ -14,17 +14,12 @@ import ROUTES from 'docs/src/route';
 const companyInfo = [
   {
     title: 'About us',
-    description: 'Meet the team and a little bit of our history.',
+    description: 'EpicChain Labs is a trailblazer in the blockchain industry, spearheading innovation and pushing the boundaries of technology.',
     routeUrl: ROUTES.about,
   },
   {
-    title: 'Handbook',
-    description: 'Learn everything about how MUI as a company is run.',
-    routeUrl: ROUTES.handbook,
-  },
-  {
     title: 'Blog',
-    description: 'Check behind-the-scenes and news about the company.',
+    description: 'Welcome to the EpicChain Labs blog, your go-to source for all things blockchain. Here, we explore the latest trends, developments, and innovations in the world of blockchain technology.',
     routeUrl: ROUTES.blog,
   },
 ];
@@ -49,27 +44,13 @@ function RemoteAwardCard() {
           overflow: 'clip',
         }}
       >
-        <Box
-          component="img"
-          src="/static/branding/careers/remote-award-light.png"
-          alt="MUI is the winner of the Remote Excellence Awards in the Small and Mighty for SMEs category."
-          height="1200px"
-          width="1200px"
-          sx={(theme) => ({
-            width: '100%',
-            height: '100%',
-            ...theme.applyDarkStyles({
-              content: `url(/static/branding/careers/remote-award-dark.png)`,
-            }),
-          })}
-        />
       </Box>
       <div>
         <Typography component="h2" variant="body2" fontWeight="semiBold">
-          Remote Excellence Awards
+        Explore Exciting Career Opportunities at EpicChain Labs
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-          Winners in the first-ever Remote Excellence Awards, in the Small & Mighty category! 🎉
+          Are you ready to revolutionize the future of blockchain technology? EpicChain Labs is looking for talented individuals like you to join our dynamic team of innovators and visionaries. 🎉
         </Typography>
         <Typography variant="body2" fontWeight="bold" color="primary">
           Learn more <KeyboardArrowRightRounded fontSize="small" sx={{ verticalAlign: 'middle' }} />
@@ -85,26 +66,25 @@ export default function PerksBenefits() {
       <Grid container spacing={5} alignItems="center">
         <Grid md={6}>
           <SectionHeadline
-            overline="Working at MUI"
             title={
               <Typography variant="h2" id="perks-and-benefits">
-                Perks & benefits
+                Benefits of a Career
               </Typography>
             }
-            description="To help you go above and beyond with us, we provide:"
+            description="Joining EpicChain Labs isn't just about a job; it's about being part of a pioneering team shaping the future of blockchain technology."
           />
           <Box sx={{ maxWidth: 500 }}>
             {[
-              ['100% remote work', 'Our entire company is globally distributed.'],
+              ['Innovative Projects', 'Work on cutting-edge projects like Quantum Guard Nexus and Smart Contracts, pushing the boundaries of what possible in blockchain.              '],
               [
-                'Retreats',
-                'We meet up every 8 months for a week of working & having fun together!',
+                'Career Growth',
+                'We invest in our employees growth, offering training and development programs to help you reach your full potential.',
               ],
               [
-                'Equipment',
-                'We provide the hardware of your choice (initial grant of $2,500 USD).',
+                'Competitive Compensation',
+                'Enjoy competitive salaries and benefits, including health insurance and retirement plans, ensuring your hard work is rewarded.',
               ],
-              ['Time off', 'We provide 33 days of paid time off globally.'],
+              ['Work-Life Balance', 'Benefit from flexible work hours and remote work options, supporting your well-being both in and out of the office.'],
             ].map((textArray) => (
               <Box
                 key={textArray[0]}

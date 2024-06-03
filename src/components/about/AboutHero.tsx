@@ -151,14 +151,13 @@ export default function AboutHero() {
     <Section cozy bg="gradient">
       <SectionHeadline
         alwaysCenter
-        overline="About us"
         title={
           <Typography variant="h2" component="h1">
-            We&apos;re on a mission to make <br />{' '}
-            <GradientText>building better UIs effortless</GradientText>
+            At its core, EpicChain features <br />{' '}
+            <GradientText>advanced technologies</GradientText>
           </Typography>
         }
-        description="Together, we are enabling developers & designers to bring stunning UIs to life with unrivalled speed and ease."
+        description="lead the future of blockchain technology, providing a secure, scalable, and user-friendly platform for individuals and businesses worldwide."
       />
       <PhotoGallery />
       <TeamStatistics />

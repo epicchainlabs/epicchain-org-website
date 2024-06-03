@@ -14,155 +14,66 @@ import Section from 'docs/src/layouts/Section';
 
 const faqData = [
   {
-    summary: 'How do I know if I need to buy a license?',
+    summary: 'What is Quantum Guard Nexus?',
     detail: (
       <React.Fragment>
-        If you are in doubt, check the license file of the npm package you're installing. For
-        instance <Link href="https://unpkg.com/@mui/x-data-grid/LICENSE">@mui/x-data-grid</Link> is
-        an MIT License (free) while{' '}
-        <Link href="https://unpkg.com/@mui/x-data-grid-pro/LICENSE">@mui/x-data-grid-pro</Link> is a
-        Commercial License.
+        Quantum Guard Nexus is a cutting-edge security feature of EpicChain that utilizes quantum-resistant algorithms to protect digital assets from quantum attacks. It ensures the security and integrity of transactions on the EpicChain platform.
       </React.Fragment>
     ),
   },
   {
-    summary: 'How many developer licenses do I need?',
+    summary: 'What is Quantum Vault Asset?',
     detail: (
       <React.Fragment>
-        The number of licenses purchased must correspond to the number of concurrent developers
-        contributing changes to the front-end code of projects that use MUI X Pro or Premium.
-        <br />
-        <br />
-        <b>Example 1.</b> Company 'A' is developing an application named 'AppA'. The app needs to
-        render 10k rows of data in a table and allow users to group, filter, and sort. The dev team
-        adds MUI X Pro to the project to satisfy this requirement. 5 front-end and 10 back-end
-        developers are working on 'AppA'. Only 1 developer is tasked with configuring and modifying
-        the data grid. Only the front-end developers are contributing code to the front-end so
-        Company 'A' purchases 5 licenses.
-        <br />
-        <br />
-        <b>Example 2.</b> A UI development team at Company 'A' creates its own UI library for
-        internal development and includes MUI X Pro as a component. The team working on 'AppA' uses
-        the new library and so does the team working on 'AppB'. 'AppA' has 5 front-end developers
-        and 'AppB' has 3. There are 2 front-end developers on the UI development team. Company 'B'
-        purchases 10 licenses.
-        <br />
-        <br />
-        <Link
-          target="_blank"
-          rel="noopener"
-          href="https://mui.com/legal/mui-x-eula/#required-quantity-of-licenses"
-        >
-          The clause in the EULA.
-        </Link>
+        Quantum Vault Asset is a secure storage solution on EpicChain that uses quantum-resistant encryption to protect digital assets. It provides a safe and reliable way to store and manage assets on the blockchain.
       </React.Fragment>
     ),
   },
   {
-    summary: 'Am I allowed to use the product after the update entitlement expires?',
+    summary: 'How do Smart Contracts on EpicChain support various programming languages?',
     detail: (
       <React.Fragment>
-        <strong>Yes.</strong> You can continue to use the product in production environments after
-        the entitlement expires. But you will need to keep your subscription active to continue
-        development, update for new features, or gain access to technical support.
-        <br />
-        <br />
-        To renew your license, please <Link href="mailto:sales@mui.com">contact sales</Link>.
+        Smart Contracts on EpicChain are designed to be compatible with multiple programming languages, including Solidity, Rust, and C++. This flexibility allows developers to write smart contracts in their preferred language, making it easier to create and deploy decentralized applications on the platform.
       </React.Fragment>
     ),
   },
   {
-    summary: 'How to remove the "unlicensed" watermark?',
+    summary: 'What sets EpicChain apart from other blockchain ecosystems?',
     detail: (
       <React.Fragment>
-        After you purchase a license, you'll receive a license key by email. Once you have the
-        license key, you need to follow the{' '}
-        <Link href="/x/introduction/licensing/#license-key-installation">instructions</Link>{' '}
-        necessary to set it up.
+        EpicChain stands out for its advanced security features, including Quantum Guard Nexus and Quantum Vault Asset, as well as its support for smart contracts in multiple programming languages. Additionally, EpicChain is committed to fostering a diverse and inclusive community, driving innovation and collaboration in the blockchain space.
       </React.Fragment>
     ),
   },
   {
-    summary: 'Why are you calling it "early access"?',
+    summary: 'How can I get involved with EpicChain?',
     detail: (
       <React.Fragment>
-        We think you'll love the features we've built so far, but we're planning to release more. We
-        opened it up as soon as we had something useful so that you can start getting value from it
-        right away, and we'll be adding new features and components based on our own ideas, and on
-        suggestions from early access customers.
+        You can get involved with EpicChain by joining our community forums, participating in events and meetups, and contributing to our open-source projects on GitHub. We welcome developers, enthusiasts, and anyone interested in blockchain technology to join us in building the future of EpicChain.
       </React.Fragment>
     ),
   },
   {
-    summary: 'Do developers have to be named?',
+    summary: 'What is the roadmap for EpicChain development?',
     detail: (
       <React.Fragment>
-        <strong>No.</strong> We trust that you will not go over the number of licensed developers.
-        Developers moving on and off projects is expected occasionally, and the license can be
-        transferred between developers at that time.
+        EpicChain's roadmap includes plans for further enhancing security, scalability, and usability of the platform. This includes updates to Quantum Guard Nexus and Quantum Vault Asset, as well as improvements to smart contract functionality and developer tools.
       </React.Fragment>
     ),
   },
   {
-    summary: 'What is the policy on redistributing the software?',
+    summary: 'How does EpicChain ensure the security of user assets?',
     detail: (
       <React.Fragment>
-        The commerial licenses are royalty-free. The licensed entity can use the components without
-        a sublicense in:
-        <ul>
-          <li>Solutions for internal company use</li>
-          <li>Hosted applications</li>
-          <li>Commercial solutions deployed for end-users</li>
-        </ul>
-        Based on the{' '}
-        <Link target="_blank" rel="noopener" href="https://mui.com/legal/mui-x-eula/#deployment">
-          'Deployment' section of the EULA
-        </Link>
-        , you can sublicense the software if it's made part of a larger work. The new licenses must
-        be in writing and substantially the same as these EULA.
-        <br />
-        <br />
-        <b>Example 1.</b> Agency 'A' is building two applications for companies 'B' and 'C'. Agency
-        'A' purchases four licenses for four developers. They build the applications and sublicense
-        the software to companies 'B' and 'C' without any extra fee. Company 'B' can deploy the
-        application built by the agency without modifying the sources. Company 'C' decides to
-        continue working on the application. They purchase one license per developer working on the
-        front end of the application.
-        <br />
-        <br />
-        There are only two limitations that require additional discussion with our sales team:
-        <ul>
-          <li>
-            A product that exposes the components in a form that allows for using them to build
-            applications, for example, in a CMS or a design-builder.
-          </li>
-          <li>
-            Modules/components that DO NOT add significant primary functionality. Example: a theme
-            for a set of components that is sold as a separate product and includes the XGrid
-            components. In such cases, we offer reseller arrangements so that everyone has an
-            incentive to enter into a relationship.
-          </li>
-        </ul>
-        If your desired use falls under any of the three categories listed above, please{' '}
-        <Link href="mailto:sales@mui.com">contact sales</Link>. We will be happy to discuss your
-        needs and see what we can do to accommodate your case.
+        EpicChain employs a variety of security measures, including encryption, multi-factor authentication, and regular security audits, to ensure the safety of user assets. Quantum Guard Nexus and Quantum Vault Asset provide additional layers of security against quantum attacks.
       </React.Fragment>
     ),
   },
   {
-    summary: 'Do you offer discounts to educational and non-profit organizations?',
+    summary: 'What are the benefits of using EpicChain for developers?',
     detail: (
       <React.Fragment>
-        Yes, we offer a 50% discount on all products licensed to students, instructors, non-profit,
-        and charity entities.
-        <br />
-        <br />
-        To qualify for this discount you need to send us a document clearly indicating that you are
-        a member of the respective institution. An email from your official account which bears your
-        signature is sufficient in most cases.
-        <br />
-        <br />
-        For more information on how to qualify for a discount, please contact sales.
+       Developers benefit from EpicChain's support for multiple programming languages, which makes it easier to write and deploy smart contracts. Additionally, EpicChain's secure and scalable infrastructure provides a reliable platform for building decentralized applications.
       </React.Fragment>
     ),
   },

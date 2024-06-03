@@ -243,11 +243,9 @@ export default function Blog(props: InferGetStaticPropsType<typeof getStaticProp
         <Section cozy bg="gradient">
           <SectionHeadline
             alwaysCenter
-            overline="Blog"
             title={
               <Typography variant="h2" component="h1">
-                Stay <GradientText>in the loop</GradientText> with
-                <br /> the latest about MUI&apos;s products
+                How EpicChain is <GradientText>Revolutionizing the</GradientText> <br /> Blockchain Ecosystem
               </Typography>
             }
           />
@@ -350,80 +348,26 @@ export default function Blog(props: InferGetStaticPropsType<typeof getStaticProp
                   color="text.primary"
                   fontWeight="semiBold"
                   variant="subtitle2"
-                  sx={{ mb: 2 }}
-                >
-                  Filter posts by tag
-                </Typography>
-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                  {Object.keys(tagInfo).map((tag) => {
-                    const selected = !!selectedTags[tag];
-                    return (
-                      <Chip
-                        key={tag}
-                        variant={selected ? 'filled' : 'outlined'}
-                        color={selected ? 'primary' : undefined}
-                        {...(selected
-                          ? {
-                              label: tag,
-                              onDelete: () => {
-                                postListRef.current?.scrollIntoView();
-                                removeTag(tag);
-                              },
-                            }
-                          : {
-                              label: tag,
-                              onClick: () => {
-                                postListRef.current?.scrollIntoView();
-                                router.push(
-                                  {
-                                    query: {
-                                      ...router.query,
-                                      tags: tag,
-                                    },
-                                  },
-                                  undefined,
-                                  { shallow: true },
-                                );
-                              },
-                            })}
-                        size="small"
-                        sx={{
-                          py: 1.2,
-                        }}
-                      />
-                    );
-                  })}
-                </Box>
-              </Paper>
-              <Paper variant="outlined">
-                <Typography
-                  color="text.primary"
-                  fontWeight="semiBold"
-                  variant="subtitle2"
                   gutterBottom
                 >
                   Want to hear more from us?
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                  Get up to date with everything MUI-related through our social media:
+                  Get up to date with everything EpicChain Lab's through our social media:
                 </Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, '* > svg': { mr: 1 } }}>
-                  <Link href="https://github.com/mui" target="_blank" fontSize={14}>
+                  <Link href="https://github.com/epicchainlabs" target="_blank" fontSize={14}>
                     <GitHubIcon fontSize="small" />
                     GitHub
                   </Link>
-                  <Link href="https://twitter.com/MUI_hq" target="_blank" fontSize={14}>
+                  <Link href="https://twitter.com/epicchainlabs" target="_blank" fontSize={14}>
                     <XIcon fontSize="small" />X
                   </Link>
                   <Link href="https://mui.com/r/discord/" target="_blank" fontSize={14}>
                     <DiscordIcon fontSize="small" />
                     Discord
                   </Link>
-                  <Link href="https://www.linkedin.com/company/mui/" target="_blank" fontSize={14}>
-                    <LinkedInIcon fontSize="small" />
-                    LinkedIn
-                  </Link>
-                  <Link href="https://www.youtube.com/@MUI_hq" target="_blank" fontSize={14}>
+                  <Link href="https://www.youtube.com/@epicchainlabs" target="_blank" fontSize={14}>
                     <YouTubeIcon fontSize="small" />
                     Youtube
                   </Link>

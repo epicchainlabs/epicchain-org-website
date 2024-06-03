@@ -35,45 +35,36 @@ export const TEMPLATES = {
         light: '/static/branding/store-templates/template-4light.jpg',
         dark: '/static/branding/store-templates/template-4dark.jpg',
       },
-      href: 'https://mui.com/store/items/devias-kit-pro/',
     },
     {
-      name: 'Client & Admin Dashboard',
-      author: 'Minimal',
+      name: 'Proposal Submission',
       src: {
         light: '/static/branding/store-templates/template-1light.jpg',
         dark: '/static/branding/store-templates/template-1dark.jpg',
       },
-      href: 'https://mui.com/store/items/minimal-dashboard/',
     },
     {
-      name: 'React Material Admin Dashboard Template',
-      author: 'Berry',
+      name: 'Proposal Review and Discussion',
       src: {
         light: '/static/branding/store-templates/template-5light.jpg',
         dark: '/static/branding/store-templates/template-5dark.jpg',
       },
-      href: 'https://mui.com/store/items/berry-react-material-admin/',
     },
     {
-      name: 'React Material Admin Dashboard',
-      author: 'Mira Pro',
+      name: 'Voting',
       src: {
         light: '/static/branding/store-templates/template-3light.jpg',
         dark: '/static/branding/store-templates/template-3dark.jpg',
       },
-      href: 'https://mui.com/store/items/mira-pro-react-material-admin-dashboard/',
     },
   ],
   [DEMOS[1]]: [
     {
-      name: 'Multipurpose Template + UI Kit',
-      author: 'theFront',
+      name: 'Implementation',
       src: {
         light: '/static/branding/store-templates/template-2light.jpg',
         dark: '/static/branding/store-templates/template-2dark.jpg',
       },
-      href: 'https://mui.com/store/items/the-front-landing-page/',
     },
     {
       name: 'Multipurpose Landing Page UI Kit',
@@ -82,7 +73,6 @@ export const TEMPLATES = {
         light: '/static/branding/store-templates/template-6light.jpg',
         dark: '/static/branding/store-templates/template-6dark.jpg',
       },
-      href: 'https://mui.com/store/items/webbee-landing-page/',
     },
   ],
   [DEMOS[2]]: [
@@ -93,7 +83,6 @@ export const TEMPLATES = {
         light: '/static/branding/store-templates/template-bazar-light.jpg',
         dark: '/static/branding/store-templates/template-bazar-dark.jpg',
       },
-      href: 'https://mui.com/store/items/bazar-pro-react-ecommerce-template/',
     },
   ],
 };
@@ -145,14 +134,13 @@ export default function MaterialTemplates() {
     <Section bg="gradient" cozy>
       <SectionHeadline
         alwaysCenter
-        overline="Templates"
         title={
           <Typography variant="h2">
-            The right template for your
-            <br /> <GradientText>specific use case</GradientText>
+            Quantum Finance template 
+            <br /> <GradientText>from EpicChain</GradientText>
           </Typography>
         }
-        description="A carefully curated collection of gorgeous, fully functional templates."
+        description="Quantum Supply Chain template from EpicChain is tailored for businesses seeking to optimize their supply chain management processes."
       />
       <Group rowLayout desktopColumns={2} sx={{ p: 2 }}>
         {DEMOS.map((name) => (
@@ -240,70 +228,6 @@ export default function MaterialTemplates() {
                   }),
                 })}
               >
-                <Link
-                  href={`${item.href}?utm_source=marketing&utm_medium=referral&utm_campaign=templates-cta2`}
-                  noLinkStyle
-                  target="_blank"
-                  sx={[
-                    (theme) => ({
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      flexDirection: 'column',
-                      gap: 1,
-                      transition: '0.2s',
-                      position: 'absolute',
-                      width: '100%',
-                      height: '100%',
-                      opacity: 0,
-                      top: 0,
-                      left: 0,
-                      bgcolor: alpha(theme.palette.primary[50], 0.6),
-                      backdropFilter: 'blur(4px)',
-                      textDecoration: 'none',
-                      '&:hover, &:focus': {
-                        opacity: 1,
-                      },
-                      ...theme.applyDarkStyles({
-                        bgcolor: alpha(theme.palette.primaryDark[900], 0.6),
-                      }),
-                    }),
-                  ]}
-                >
-                  <Typography
-                    variant="body2"
-                    color="text.tertiary"
-                    fontWeight="semiBold"
-                    textAlign="center"
-                  >
-                    Developed by {templates[templateIndex].author}
-                  </Typography>
-                  <Typography
-                    component="p"
-                    variant="h6"
-                    fontWeight="semiBold"
-                    textAlign="center"
-                    color="text.primary"
-                  >
-                    {templates[templateIndex].name}
-                  </Typography>
-                  <Box
-                    sx={[
-                      (theme) => ({
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 0.5,
-                        color: 'primary.500',
-                        ...theme.applyDarkStyles({
-                          color: 'primary.200',
-                        }),
-                      }),
-                    ]}
-                  >
-                    <Typography fontWeight="bold">Buy now</Typography>
-                    <LaunchRounded fontSize="small" />
-                  </Box>
-                </Link>
               </Box>
             ))}
           </SwipeableViews>

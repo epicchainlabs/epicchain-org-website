@@ -13,22 +13,22 @@ import { InfoCard } from '@mui/docs/InfoCard';
 const content = [
   {
     icon: <StyleRoundedIcon color="primary" />,
-    title: 'Completely unstyled',
-    description: 'Nothing to override—start fresh with any style solution or design system.',
+    title: 'Proposal Submission',
+    description: 'Users can submit proposals for changes or additions to the EpicChain ecosystem. Proposals can range from protocol upgrades to fund allocations and strategic initiatives.',
     link: '/base-ui/getting-started/',
   },
   {
     icon: <PhishingRoundedIcon color="primary" />,
-    title: 'Low-level hooks',
+    title: 'Voting Mechanism',
     description:
-      "When it's time to go fully custom, Base UI has you covered with low-level hooks for fine-grained flexibility in component design.",
+      "Token holders can vote on proposed governance decisions, with each token typically representing one vote. This mechanism ensures that decisions are made based on the consensus of the community.",
     link: '/base-ui/getting-started/usage/#components-vs-hooks',
   },
   {
     icon: <AccessibilityNewRounded color="primary" />,
-    title: 'Accessibility',
+    title: 'Delegated Voting',
     description:
-      'We take accessibility seriously. The Base UI docs are loaded with guidelines and best practices.',
+      'Users can delegate their voting power to other participants, allowing for more efficient decision-making and representation.',
     link: '/base-ui/getting-started/accessibility/',
   },
 ];
@@ -38,14 +38,13 @@ export default function BaseUISummary() {
     <Section cozy>
       <SectionHeadline
         alwaysCenter
-        overline="Why Base UI"
         title={
           <Typography variant="h2" sx={{ mt: 1 }}>
-            Essential building blocks
-            <br /> for <GradientText>sleek and accessible</GradientText> UIs
+            EpicChain 
+            <br /> Decentralized <GradientText>Governance </GradientText> Module
           </Typography>
         }
-        description="Base UI abstracts away the more frustrating aspects of UI development—like accessibility, cross-browser compatibility, and event handling—so you can skip ahead to design implementation."
+        description="The EpicChain Decentralized Governance Module is a critical component of the EpicChain ecosystem, enabling decentralized decision-making and community participation in governance processes."
       />
       <Box sx={{ mt: 6 }}>
         <Grid container spacing={3}>
@@ -55,43 +54,6 @@ export default function BaseUISummary() {
             </Grid>
           ))}
         </Grid>
-      </Box>
-      <Typography fontWeight="medium" textAlign="center" mt={6} mb={2} fontSize="0.875rem">
-        Alternative to libraries such as:
-      </Typography>
-      <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center' }}>
-        <Box
-          sx={(theme) => ({
-            background: 'url(/static/branding/base-ui/radix.svg)',
-            ...theme.applyDarkStyles({
-              background: 'url(/static/branding/base-ui/radix-dark.svg)',
-            }),
-          })}
-          width={77}
-          height={37}
-        />
-
-        <Box
-          sx={(theme) => ({
-            background: 'url(/static/branding/base-ui/react-aria.svg)',
-            ...theme.applyDarkStyles({
-              background: 'url(/static/branding/base-ui/react-aria-dark.svg)',
-            }),
-          })}
-          width={113}
-          height={37}
-        />
-
-        <Box
-          sx={(theme) => ({
-            background: 'url(/static/branding/base-ui/headless-ui.svg)',
-            ...theme.applyDarkStyles({
-              background: 'url(/static/branding/base-ui/headless-ui-dark.svg)',
-            }),
-          })}
-          width={116}
-          height={37}
-        />
       </Box>
     </Section>
   );
