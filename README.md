@@ -1,8 +1,67 @@
-# EpicChain.org
+# EpicChain Lab's
 
-![EpicChain Logo](https://avatars.githubusercontent.com/u/114784254))
+<div align="center">
+    <style>
+        .rainbow-border {
+            display: inline-block;
+            padding: 5px;
+            border-radius: 50%;
+            background: conic-gradient(red, orange, yellow, green, cyan, blue, violet, red);
+        }
+        .rainbow-border img {
+            display: block;
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #222;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .table-of-contents {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="rainbow-border">
+        <img src="https://avatars.githubusercontent.com/u/114784254" alt="EpicChain Logo">
+    </div>
+</div>
 
-Welcome to the EpicChain.org project! This repository contains the source code for the EpicChain website, a next-generation blockchain ecosystem with advanced features like Quantum Guard Nexus, Quantum Vault Asset, and multi-language smart contracts.
+Welcome to the epicchain.org project! This repository contains the source code for the EpicChain website, a next-generation blockchain ecosystem with advanced features like Quantum Guard Nexus, Quantum Vault Asset, and multi-language smart contracts.
 
 ---
 
@@ -61,7 +120,6 @@ pnpm start
 
 This will run the project locally at `http://localhost:3000`.
 
-
 ## Scripts
 
 Here are the main scripts you can use to manage the project:
@@ -99,9 +157,8 @@ Follow us on social media:
 
 - [Twitter](https://twitter.com/epicchainlabs)
 - [Youtube](https://youtube.com/epicchainlabs)
-- [Discord](https://discord.com/invite/vM7GkUJX)
+- [Discord](https://discord.com/invite/FKJbnpMXVh)
 
 ---
-
 
 ### Thank you for your interest in EpicChain.org!
