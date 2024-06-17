@@ -1,6 +1,6 @@
 # EpicChain.org
 
-![EpicChain Logo](https://link-to-your-logo.com/logo.png)
+![EpicChain Logo](https://avatars.githubusercontent.com/u/114784254))
 
 Welcome to the EpicChain.org project! This repository contains the source code for the EpicChain website, a next-generation blockchain ecosystem with advanced features like Quantum Guard Nexus, Quantum Vault Asset, and multi-language smart contracts.
 
