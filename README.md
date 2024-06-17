@@ -13,48 +13,6 @@
             border-radius: 50%;
             width: 150px; /* Adjust size as needed */
         }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background: white;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #222;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-        .content {
-            margin-top: 20px;
-        }
-        .table-of-contents {
-            margin-top: 20px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact {
-            margin-top: 20px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-        }
     </style>
     <div class="rainbow-border">
         <img src="https://avatars.githubusercontent.com/u/114784254" alt="EpicChain Logo">
