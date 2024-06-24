@@ -1,24 +1,5 @@
 # EpicChain Lab's
 
-<div align="center">
-    <style>
-        .rainbow-border {
-            display: inline-block;
-            padding: 5px;
-            border-radius: 50%;
-            background: conic-gradient(red, orange, yellow, green, cyan, blue, violet, red);
-        }
-        .rainbow-border img {
-            display: block;
-            border-radius: 50%;
-            width: 150px; /* Adjust size as needed */
-        }
-    </style>
-    <div class="rainbow-border">
-        <img src="https://avatars.githubusercontent.com/u/114784254" alt="EpicChain Logo">
-    </div>
-</div>
-
 Welcome to the epicchain.org project! This repository contains the source code for the EpicChain website, a next-generation blockchain ecosystem with advanced features like Quantum Guard Nexus, Quantum Vault Asset, and multi-language smart contracts.
 
 ---
